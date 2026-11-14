@@ -1,35 +1,45 @@
-[{"stream_name":"stderr","time":7.240298543,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
-,{"stream_name":"stderr","time":7.240337516,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
-,{"stream_name":"stderr","time":7.240341666,"data":"0.00s - to python to disable frozen modules.\n"}
-,{"stream_name":"stderr","time":7.240344383,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
-,{"stream_name":"stderr","time":7.819212989,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
-,{"stream_name":"stderr","time":7.819259694,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
-,{"stream_name":"stderr","time":7.819265049,"data":"0.00s - to python to disable frozen modules.\n"}
-,{"stream_name":"stderr","time":7.819268673,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
-,{"stream_name":"stderr","time":9.19946785,"data":"Traceback (most recent call last):\n"}
-,{"stream_name":"stderr","time":9.200087475,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
-,{"stream_name":"stderr","time":9.200102465,"data":"    import sys;import papermill as pm;pm.execute_notebook(\"__notebook__.ipynb\",\"__notebook__.ipynb\",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)\n"}
-,{"stream_name":"stderr","time":9.200108487,"data":"                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
-,{"stream_name":"stderr","time":9.200112626,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
-,{"stream_name":"stderr","time":9.200116497,"data":"    raise_for_execution_errors(nb, output_path)\n"}
-,{"stream_name":"stderr","time":9.200119837,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
-,{"stream_name":"stderr","time":9.200127111,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
-,{"stream_name":"stderr","time":9.200129912,"data":"    raise error\n"}
-,{"stream_name":"stderr","time":9.200132161,"data":"papermill.exceptions.PapermillExecutionError: \n"}
-,{"stream_name":"stderr","time":9.200134525,"data":"---------------------------------------------------------------------------\n"}
-,{"stream_name":"stderr","time":9.200136992000001,"data":"Exception encountered at \"In [8]\":\n"}
-,{"stream_name":"stderr","time":9.200139411,"data":"  File \"/tmp/ipykernel_23/3954007894.py\", line 2\n"}
-,{"stream_name":"stderr","time":9.200156113,"data":"    Starting DeterministicASI training with formal guarantees...\")print(f\"Contraction k = {model.contraction_k} (PROVEN \u003c 1)\")print(f\"Modification language: QF_LRA (DECIDABLE)\")print(f\"Verification: Z3 (SOUND + COMPLETE for fragment)\")print(f\"Self-model: Formal AST interpreter (NOT neural)\")print(f\"Intelligence operator: Provably monotonic\")\n"}
-,{"stream_name":"stderr","time":9.200173218,"data":"                                                                                                                                                                                                                                                                                                                                                     ^\n"}
-,{"stream_name":"stderr","time":9.200178022,"data":"SyntaxError: unterminated string literal (detected at line 2)\n"}
-,{"stream_name":"stderr","time":9.200191508,"data":"\n"}
-,{"stream_name":"stderr","time":9.200195016,"data":"\n"}
-,{"stream_name":"stderr","time":11.394005185,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
-,{"stream_name":"stderr","time":11.394035577,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
-,{"stream_name":"stderr","time":11.549749213,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
-,{"stream_name":"stderr","time":11.549776366,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
-,{"stream_name":"stderr","time":12.295030537,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
-,{"stream_name":"stderr","time":12.37184775,"data":"[NbConvertApp] Writing 34284 bytes to __notebook__.ipynb\n"}
-,{"stream_name":"stderr","time":14.813199138,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
-,{"stream_name":"stderr","time":15.30972625,"data":"[NbConvertApp] Writing 316711 bytes to __results__.html\n"}
+[{"stream_name":"stderr","time":8.239006369,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.23905678,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.239064164,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.239068775,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.868207876,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.868240419,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.868244989,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.868250299,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":17.801934979,"data":"Device: cuda\n"}
+,{"stream_name":"stdout","time":17.8019701,"data":"GPU: Tesla T4\n"}
+,{"stream_name":"stdout","time":17.80197435,"data":"CUDA: 13.0\n"}
+,{"stream_name":"stdout","time":17.801976812,"data":"PyTorch: 2.11.0+cu130\n"}
+,{"stream_name":"stdout","time":17.801979264,"data":"Output dir: /kaggle/working/deterministic_asi\n"}
+,{"stream_name":"stderr","time":21.436821782,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":21.437454303,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":21.437473535,"data":"    import sys;import papermill as pm;pm.execute_notebook(\"__notebook__.ipynb\",\"__notebook__.ipynb\",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)\n"}
+,{"stream_name":"stderr","time":21.437479417,"data":"                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":21.437483696,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":21.437487633,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":21.437490853,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":21.437494275,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":21.437497795,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":21.437504625,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":21.437508038,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":21.437511353,"data":"Exception encountered at \"In [2]\":\n"}
+,{"stream_name":"stderr","time":21.437517437,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":21.437520708,"data":"NameError                                 Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":21.437523944,"data":"/tmp/ipykernel_22/2676095406.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":21.437527493,"data":"      3 import torch.nn as nn\n"}
+,{"stream_name":"stderr","time":21.437530677,"data":"      4 import time\n"}
+,{"stream_name":"stderr","time":21.4375428,"data":"----\u003e 5 @dataclass\n"}
+,{"stream_name":"stderr","time":21.437546349,"data":"      6 class ASIConfig:\n"}
+,{"stream_name":"stderr","time":21.437549413,"data":"      7     latent_dim: int = 512\n"}
+,{"stream_name":"stderr","time":21.437552598,"data":"\n"}
+,{"stream_name":"stderr","time":21.437555563,"data":"NameError: name 'dataclass' is not defined\n"}
+,{"stream_name":"stderr","time":21.437558833,"data":"\n"}
+,{"stream_name":"stderr","time":23.611463606,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":23.611508051,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":23.782863466,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":23.782886906,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":24.551771119,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":24.62544348,"data":"[NbConvertApp] Writing 8118 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":27.149412494,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":27.668069101,"data":"[NbConvertApp] Writing 293237 bytes to __results__.html\n"}
 ]

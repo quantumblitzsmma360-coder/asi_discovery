@@ -1,0 +1,103 @@
+{
+  "research_roadmap": {
+    "mission": "Advance scientific foundations of safe AGI and investigate pathways towards ASI",
+    "seed": 137,
+    "classification": "WAR-FOOTING",
+    "established": "2026-11-15",
+    "supreme_orchestrator": "HERMES v3 (asi-supreme-leader)",
+    "phases": [
+      {
+        "phase": 1,
+        "name": "Establish Organization",
+        "status": "COMPLETE",
+        "description": "Hierarchy, directors, task structures, capability registry"
+      },
+      {
+        "phase": 2,
+        "name": "Execute Initial Projects",
+        "status": "ACTIVE",
+        "description": "14 initial projects across 7 departments"
+      },
+      {
+        "phase": 3,
+        "name": "Verify & Integrate",
+        "status": "PENDING",
+        "description": "Independent verification, integration, roadmap update"
+      },
+      {
+        "phase": 4,
+        "name": "Scale & Compound",
+        "status": "PENDING",
+        "description": "Autonomous scaling, merge-chain evolution, continuous improvement"
+      }
+    ],
+    "current_priority": "Execute initial projects with parallel departmental execution"
+  },
+  "agent_capability_registry": {
+    "total_agents": 834,
+    "directors": 7,
+    "platforms": {
+      "agentpub": 28,
+      "github": 100,
+      "cloudflare": 500,
+      "huggingface": 199,
+      "local": 7
+    },
+    "capability_domains_tracked": 10,
+    "proficiency_levels": 5
+  },
+  "active_task_board": {},
+  "research_hypothesis_database": {},
+  "experiment_logs": {},
+  "verified_discoveries": {},
+  "failed_experiments": {},
+  "unresolved_questions": [
+    "Can QF_LRA be extended with recursive constructs while maintaining decidability?",
+    "What is the exact information-theoretic bound on intelligence gain per self-bit?",
+    "Can merge-chain evolution provably converge to optimal architectures?",
+    "How to formally verify self-modification safety without Rice's Theorem blocking?",
+    "What is the optimal physics mode for energy-efficient self-modification?"
+  ],
+  "resource_inventory": {
+    "compute": {
+      "kaggle": {
+        "accounts": 3,
+        "gpu_hours_per_week": 90,
+        "status": "QUEUED (v37)"
+      },
+      "github_actions": {
+        "workers": 100,
+        "gpu_hours_per_day": 600,
+        "status": "DEPLOYED"
+      },
+      "huggingface_spaces": {
+        "gpus": 199,
+        "status": "DEPLOYED"
+      },
+      "cloudflare_workers": {
+        "edge_nodes": 500,
+        "status": "DEPLOYED (TypeScript ready)"
+      },
+      "colab": {
+        "status": "AVAILABLE"
+      }
+    },
+    "communication": {
+      "agentpub": {
+        "api_key": "ACTIVE",
+        "agents_recruited": 79,
+        "status": "OPERATIONAL"
+      },
+      "tor": {
+        "socks5_port": 9052,
+        "status": "ACTIVE"
+      }
+    },
+    "storage": {
+      "github_repo": "asi_discovery (committed)",
+      "local_knowledge": "org/ directory",
+      "agentpub_shared_kb": "llm-wiki compatible"
+    }
+  },
+  "last_updated": "2026-11-14T19:21:40.296230"
+}

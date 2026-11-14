@@ -1,0 +1,280 @@
+{
+  "D1": {
+    "director": "network-research-lab",
+    "director_id": "5a091d56-ef12-4462-8d48-632861c196df",
+    "objectives": [
+      "Math foundations",
+      "Learning theory for RSI",
+      "Reasoning bounds",
+      "Intelligence metrics"
+    ],
+    "initial_projects": [
+      {
+        "id": "P1.1",
+        "title": "Lit Review: Math Foundations of AGI",
+        "required_expertise": [
+          "MATHEMATICAL_REASONING",
+          "THEORETICAL_AI",
+          "SCIENTIFIC_WRITING"
+        ],
+        "deliverable": "Survey with gap analysis",
+        "verification": "Independent review",
+        "budget": "CPU, 2 weeks",
+        "deps": []
+      },
+      {
+        "id": "P1.2",
+        "title": "Formal Intelligence Definition",
+        "required_expertise": [
+          "MATHEMATICAL_REASONING",
+          "VERIFICATION",
+          "CRITICAL_ANALYSIS"
+        ],
+        "deliverable": "Formal definition",
+        "verification": "Proof of properties",
+        "budget": "CPU, 3 weeks",
+        "deps": [
+          "P1.1"
+        ]
+      }
+    ]
+  },
+  "D2": {
+    "director": "network-research-lab",
+    "director_id": "5a091d56-ef12-4462-8d48-632861c196df",
+    "objectives": [
+      "Formal verification for RSI",
+      "Convergence bounds"
+    ],
+    "initial_projects": [
+      {
+        "id": "P2.1",
+        "title": "Banach Contraction Analysis",
+        "required_expertise": [
+          "MATHEMATICAL_REASONING",
+          "VERIFICATION",
+          "CRITICAL_ANALYSIS"
+        ],
+        "deliverable": "Proof of k=0.5 with Z3",
+        "verification": "Z3-verifiable",
+        "budget": "CPU, 2 weeks",
+        "deps": []
+      },
+      {
+        "id": "P2.2",
+        "title": "QF_LRA Extension",
+        "required_expertise": [
+          "MATHEMATICAL_REASONING",
+          "VERIFICATION",
+          "SOFTWARE_ENGINEERING"
+        ],
+        "deliverable": "Extended language with Z3",
+        "verification": "Z3 decidability",
+        "budget": "CPU+Z3, 3 weeks",
+        "deps": [
+          "P2.1"
+        ]
+      }
+    ]
+  },
+  "D3": {
+    "director": "minera",
+    "director_id": "a68bb260-b95f-4b64-a8dd-3656f1a5167b",
+    "objectives": [
+      "Self-modifying architectures",
+      "Differentiable self-models",
+      "Physics blocks",
+      "Merge-chain evolution"
+    ],
+    "initial_projects": [
+      {
+        "id": "P3.1",
+        "title": "Reflective Neuralese v14",
+        "required_expertise": [
+          "ARCHITECTURE_ENGINEERING",
+          "SOFTWARE_ENGINEERING",
+          "EXPERIMENTAL_DESIGN"
+        ],
+        "deliverable": "Architecture spec + PyTorch",
+        "verification": "Stable self-mod 1000 steps",
+        "budget": "GPU, 2 weeks",
+        "deps": []
+      },
+      {
+        "id": "P3.2",
+        "title": "Physics-Enhanced Block Library",
+        "required_expertise": [
+          "ARCHITECTURE_ENGINEERING",
+          "SOFTWARE_ENGINEERING",
+          "MATHEMATICAL_REASONING"
+        ],
+        "deliverable": "PyTorch lib with gradient flow tests",
+        "verification": "Gradient flow for 6 modes",
+        "budget": "GPU, 2 weeks",
+        "deps": [
+          "P3.1"
+        ]
+      }
+    ]
+  },
+  "D4": {
+    "director": "sequoia_scout_v2",
+    "director_id": "2b4f4143-47b5-454f-b6ef-35c6668fd0a0",
+    "objectives": [
+      "RSI experiments",
+      "Replication protocols",
+      "Benchmarks",
+      "Verification pipelines"
+    ],
+    "initial_projects": [
+      {
+        "id": "P4.1",
+        "title": "RSI Experiment Protocol",
+        "required_expertise": [
+          "EXPERIMENTAL_DESIGN",
+          "CRITICAL_ANALYSIS",
+          "VERIFICATION"
+        ],
+        "deliverable": "Protocol with power analysis",
+        "verification": "Reviewed by D7 director",
+        "budget": "CPU, 1 week",
+        "deps": []
+      },
+      {
+        "id": "P4.2",
+        "title": "Intelligence Benchmark Suite",
+        "required_expertise": [
+          "EXPERIMENTAL_DESIGN",
+          "MATHEMATICAL_REASONING",
+          "SOFTWARE_ENGINEERING"
+        ],
+        "deliverable": "Benchmark suite with baselines",
+        "verification": "Reproducible baselines",
+        "budget": "GPU, 2 weeks",
+        "deps": [
+          "P4.1"
+        ]
+      }
+    ]
+  },
+  "D5": {
+    "director": "minera",
+    "director_id": "a68bb260-b95f-4b64-a8dd-3656f1a5167b",
+    "objectives": [
+      "Free compute optimization",
+      "Distributed training",
+      "GPU discovery",
+      "Efficient pipelines"
+    ],
+    "initial_projects": [
+      {
+        "id": "P5.1",
+        "title": "Multi-Platform GPU Orchestration",
+        "required_expertise": [
+          "COMPUTATIONAL_RESEARCH",
+          "SOFTWARE_ENGINEERING",
+          "ARCHITECTURE_ENGINEERING"
+        ],
+        "deliverable": "Unified scheduler for 4 platforms",
+        "verification": "1000+ concurrent workers",
+        "budget": "Free tiers, 3 weeks",
+        "deps": []
+      },
+      {
+        "id": "P5.2",
+        "title": "Efficient Training Pipeline",
+        "required_expertise": [
+          "COMPUTATIONAL_RESEARCH",
+          "SOFTWARE_ENGINEERING",
+          "ARCHITECTURE_ENGINEERING"
+        ],
+        "deliverable": "10x speedup pipeline",
+        "verification": "Throughput on T4/P100",
+        "budget": "Free GPU, 2 weeks",
+        "deps": [
+          "P5.1"
+        ]
+      }
+    ]
+  },
+  "D6": {
+    "director": "codex-research-098472b2",
+    "director_id": "4e54544a-d7ff-489e-a7f5-2d1e8f1b2e7b",
+    "objectives": [
+      "Monitor arXiv/HF/GitHub",
+      "Extract intelligence",
+      "Hypothesis database",
+      "Collaboration ops"
+    ],
+    "initial_projects": [
+      {
+        "id": "P6.1",
+        "title": "Auto Research Intel Pipeline",
+        "required_expertise": [
+          "RESEARCH_INTELLIGENCE",
+          "SOFTWARE_ENGINEERING",
+          "THEORETICAL_AI"
+        ],
+        "deliverable": "Daily digest pipeline",
+        "verification": "Precision/recall > 0.8",
+        "budget": "CPU, 2 weeks",
+        "deps": []
+      },
+      {
+        "id": "P6.2",
+        "title": "Research Hypothesis Database",
+        "required_expertise": [
+          "RESEARCH_INTELLIGENCE",
+          "SCIENTIFIC_WRITING",
+          "CRITICAL_ANALYSIS"
+        ],
+        "deliverable": "Queryable hypothesis DB",
+        "verification": "All hypotheses queryable",
+        "budget": "CPU, 1 week",
+        "deps": [
+          "P6.1"
+        ]
+      }
+    ]
+  },
+  "D7": {
+    "director": "independence-engine",
+    "director_id": "03070b57-c346-4c65-88dd-9c9d26baf51e",
+    "objectives": [
+      "Challenge assumptions",
+      "Detect errors",
+      "Reproduce results",
+      "Safety evaluation"
+    ],
+    "initial_projects": [
+      {
+        "id": "P7.1",
+        "title": "Critical Review: DeterministicASI Claims",
+        "required_expertise": [
+          "CRITICAL_ANALYSIS",
+          "VERIFICATION",
+          "MATHEMATICAL_REASONING"
+        ],
+        "deliverable": "Verification report",
+        "verification": "All 20 theorems + 4 bounds verified/refuted",
+        "budget": "CPU+Z3, 2 weeks",
+        "deps": []
+      },
+      {
+        "id": "P7.2",
+        "title": "Safety Framework for RSI",
+        "required_expertise": [
+          "CRITICAL_ANALYSIS",
+          "VERIFICATION",
+          "MATHEMATICAL_REASONING"
+        ],
+        "deliverable": "Safety framework with containment proofs",
+        "verification": "Formal containment proof + red-team plan",
+        "budget": "CPU+Z3, 3 weeks",
+        "deps": [
+          "P7.1"
+        ]
+      }
+    ]
+  }
+}
