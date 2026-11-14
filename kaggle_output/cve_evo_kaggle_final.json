@@ -1,0 +1,17 @@
+{
+  "final_intel": 0.109375,
+  "final_loss": 3.6798543632030487,
+  "accuracy": 0.109375,
+  "parameters": 14160441,
+  "config": {
+    "latent_dim": 574,
+    "num_blocks": 4,
+    "max_act_steps": 8,
+    "vocab_size": 119,
+    "num_classes": 10
+  },
+  "epoch": 0,
+  "architecture": "reflective_neuralese",
+  "self_modification": true,
+  "causal_world_model": true
+}

@@ -1,0 +1,141 @@
+[{"stream_name":"stderr","time":8.315037375,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.315090966,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.315095935,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.315098894,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.946885162,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.946914292,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.946923712,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.94692777,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":17.418694986,"data":"Device: cuda\n"}
+,{"stream_name":"stdout","time":17.418728454,"data":"GPU: Tesla T4\n"}
+,{"stream_name":"stdout","time":17.418733167,"data":"Torch: 2.11.0+cu130\n"}
+,{"stream_name":"stdout","time":18.597591043,"data":"Vocabulary size: 119\n"}
+,{"stream_name":"stdout","time":18.597626843,"data":"Loaded 0 real CVE samples, 0 CWE classes\n"}
+,{"stream_name":"stdout","time":18.597632066,"data":"No real data found, generating synthetic CVE data\n"}
+,{"stream_name":"stdout","time":18.597635781,"data":"Generated 10000 synthetic samples\n"}
+,{"stream_name":"stdout","time":18.597639377,"data":"Vocab: 119, Classes: 10, Samples: 10000\n"}
+,{"stream_name":"stdout","time":19.064219417,"data":"Total parameters: 14,160,441\n"}
+,{"stream_name":"stdout","time":54.960684601,"data":"  Epoch 0 Batch 100: Running self-modification...\n"}
+,{"stream_name":"stdout","time":54.960717052,"data":"    Self-mod: goal_prob=0.5193, mods=0\n"}
+,{"stream_name":"stdout","time":85.947046267,"data":"  Epoch 0 Batch 200: Running self-modification...\n"}
+,{"stream_name":"stdout","time":85.947096325,"data":"    Self-mod: goal_prob=0.5194, mods=13\n"}
+,{"stream_name":"stdout","time":116.178222981,"data":"Epoch 0: Train Loss=3.6914, Train Acc=0.0962, Val Loss=3.6799, Val Acc=0.1094\n"}
+,{"stream_name":"stdout","time":116.178254724,"data":"  -\u003e Saved best model (Val Acc: 0.1094\n"}
+,{"stream_name":"stdout","time":149.627852836,"data":"  Epoch 1 Batch 100: Running self-modification...\n"}
+,{"stream_name":"stdout","time":149.627885677,"data":"    Self-mod: goal_prob=0.5193, mods=0\n"}
+,{"stream_name":"stdout","time":181.590263728,"data":"  Epoch 1 Batch 200: Running self-modification...\n"}
+,{"stream_name":"stdout","time":181.590298423,"data":"    Self-mod: goal_prob=0.5199, mods=37\n"}
+,{"stream_name":"stdout","time":211.279731547,"data":"Epoch 1: Train Loss=3.6593, Train Acc=0.1016, Val Loss=3.6394, Val Acc=0.0791\n"}
+,{"stream_name":"stdout","time":244.258016613,"data":"  Epoch 2 Batch 100: Running self-modification...\n"}
+,{"stream_name":"stdout","time":244.258049866,"data":"    Self-mod: goal_prob=0.5193, mods=0\n"}
+,{"stream_name":"stdout","time":276.544930478,"data":"  Epoch 2 Batch 200: Running self-modification...\n"}
+,{"stream_name":"stdout","time":276.544970704,"data":"    Self-mod: goal_prob=0.5193, mods=0\n"}
+,{"stream_name":"stdout","time":306.222702233,"data":"Epoch 2: Train Loss=3.6190, Train Acc=0.1025, Val Loss=3.6000, Val Acc=0.0791\n"}
+,{"stream_name":"stdout","time":339.184465602,"data":"  Epoch 3 Batch 100: Running self-modification...\n"}
+,{"stream_name":"stdout","time":339.184515254,"data":"    Self-mod: goal_prob=0.5193, mods=0\n"}
+,{"stream_name":"stdout","time":371.614846541,"data":"  Epoch 3 Batch 200: Running self-modification...\n"}
+,{"stream_name":"stdout","time":371.614876673,"data":"    Self-mod: goal_prob=0.5198, mods=13\n"}
+,{"stream_name":"stdout","time":401.328030375,"data":"Epoch 3: Train Loss=3.5794, Train Acc=0.1025, Val Loss=3.5602, Val Acc=0.0791\n"}
+,{"stream_name":"stdout","time":434.323275435,"data":"  Epoch 4 Batch 100: Running self-modification...\n"}
+,{"stream_name":"stdout","time":434.323323497,"data":"    Self-mod: goal_prob=0.5204, mods=37\n"}
+,{"stream_name":"stdout","time":466.741057107,"data":"  Epoch 4 Batch 200: Running self-modification...\n"}
+,{"stream_name":"stdout","time":466.741091885,"data":"    Self-mod: goal_prob=0.5200, mods=13\n"}
+,{"stream_name":"stdout","time":496.468717434,"data":"Epoch 4: Train Loss=3.5242, Train Acc=0.1022, Val Loss=3.4875, Val Acc=0.0791\n"}
+,{"stream_name":"stdout","time":529.438651043,"data":"  Epoch 5 Batch 100: Running self-modification...\n"}
+,{"stream_name":"stdout","time":529.438687235,"data":"    Self-mod: goal_prob=0.5216, mods=13\n"}
+,{"stream_name":"stdout","time":561.865925346,"data":"  Epoch 5 Batch 200: Running self-modification...\n"}
+,{"stream_name":"stdout","time":561.865963145,"data":"    Self-mod: goal_prob=0.5203, mods=13\n"}
+,{"stream_name":"stdout","time":591.565225205,"data":"Epoch 5: Train Loss=3.4447, Train Acc=0.1022, Val Loss=3.3498, Val Acc=0.0791\n"}
+,{"stream_name":"stdout","time":624.508139311,"data":"  Epoch 6 Batch 100: Running self-modification...\n"}
+,{"stream_name":"stdout","time":624.508171968,"data":"    Self-mod: goal_prob=0.5209, mods=13\n"}
+,{"stream_name":"stdout","time":656.897231836,"data":"  Epoch 6 Batch 200: Running self-modification...\n"}
+,{"stream_name":"stdout","time":656.897264685,"data":"    Self-mod: goal_prob=0.5191, mods=13\n"}
+,{"stream_name":"stdout","time":686.59241862,"data":"Epoch 6: Train Loss=3.3118, Train Acc=0.1025, Val Loss=3.2811, Val Acc=0.0791\n"}
+,{"stream_name":"stdout","time":719.584303833,"data":"  Epoch 7 Batch 100: Running self-modification...\n"}
+,{"stream_name":"stdout","time":719.584344705,"data":"    Self-mod: goal_prob=0.5203, mods=37\n"}
+,{"stream_name":"stdout","time":752.170655267,"data":"  Epoch 7 Batch 200: Running self-modification...\n"}
+,{"stream_name":"stdout","time":752.170700752,"data":"    Self-mod: goal_prob=0.5216, mods=13\n"}
+,{"stream_name":"stdout","time":782.088691448,"data":"Epoch 7: Train Loss=3.2583, Train Acc=0.1025, Val Loss=3.2343, Val Acc=0.0791\n"}
+,{"stream_name":"stdout","time":815.439086632,"data":"  Epoch 8 Batch 100: Running self-modification...\n"}
+,{"stream_name":"stdout","time":815.439135469,"data":"    Self-mod: goal_prob=0.5203, mods=19\n"}
+,{"stream_name":"stdout","time":848.100203444,"data":"  Epoch 8 Batch 200: Running self-modification...\n"}
+,{"stream_name":"stdout","time":848.100245034,"data":"    Self-mod: goal_prob=0.5220, mods=37\n"}
+,{"stream_name":"stdout","time":877.929858075,"data":"Epoch 8: Train Loss=3.1777, Train Acc=0.1014, Val Loss=3.2789, Val Acc=0.0791\n"}
+,{"stream_name":"stdout","time":910.899638628,"data":"  Epoch 9 Batch 100: Running self-modification...\n"}
+,{"stream_name":"stdout","time":910.899674113,"data":"    Self-mod: goal_prob=0.5193, mods=0\n"}
+,{"stream_name":"stdout","time":943.291633869,"data":"  Epoch 9 Batch 200: Running self-modification...\n"}
+,{"stream_name":"stdout","time":943.291668896,"data":"    Self-mod: goal_prob=0.5186, mods=31\n"}
+,{"stream_name":"stdout","time":973.003605056,"data":"Epoch 9: Train Loss=3.2706, Train Acc=0.1025, Val Loss=3.2459, Val Acc=0.0791\n"}
+,{"stream_name":"stdout","time":1005.93705465,"data":"  Epoch 10 Batch 100: Running self-modification...\n"}
+,{"stream_name":"stdout","time":1005.937087765,"data":"    Self-mod: goal_prob=0.5180, mods=25\n"}
+,{"stream_name":"stdout","time":1038.363610548,"data":"  Epoch 10 Batch 200: Running self-modification...\n"}
+,{"stream_name":"stdout","time":1038.363656241,"data":"    Self-mod: goal_prob=0.5207, mods=31\n"}
+,{"stream_name":"stdout","time":1068.058293064,"data":"Epoch 10: Train Loss=3.2196, Train Acc=0.1025, Val Loss=3.1867, Val Acc=0.0791\n"}
+,{"stream_name":"stdout","time":1068.058327408,"data":"Early stopping at epoch 10\n"}
+,{"stream_name":"stdout","time":1068.058333664,"data":"Training complete. Best Val Acc: 0.1094\n"}
+,{"stream_name":"stdout","time":1073.828417376,"data":"\n"}
+,{"stream_name":"stdout","time":1073.828453206,"data":"Classification Report:\n"}
+,{"stream_name":"stdout","time":1073.828460596,"data":"              precision    recall  f1-score   support\n"}
+,{"stream_name":"stdout","time":1073.82846714,"data":"\n"}
+,{"stream_name":"stdout","time":1073.828472447,"data":"           0     0.0000    0.0000    0.0000       105\n"}
+,{"stream_name":"stdout","time":1073.828478232,"data":"           1     0.0000    0.0000    0.0000        78\n"}
+,{"stream_name":"stdout","time":1073.828483699,"data":"           2     0.0000    0.0000    0.0000       100\n"}
+,{"stream_name":"stdout","time":1073.828489475,"data":"           3     0.0000    0.0000    0.0000        91\n"}
+,{"stream_name":"stdout","time":1073.828495016,"data":"           4     0.0000    0.0000    0.0000       109\n"}
+,{"stream_name":"stdout","time":1073.82850003,"data":"           5     0.0000    0.0000    0.0000        98\n"}
+,{"stream_name":"stdout","time":1073.828505479,"data":"           6     0.0000    0.0000    0.0000        97\n"}
+,{"stream_name":"stdout","time":1073.828511043,"data":"           7     0.1090    1.0000    0.1966       109\n"}
+,{"stream_name":"stdout","time":1073.828516302,"data":"           8     0.0000    0.0000    0.0000       109\n"}
+,{"stream_name":"stdout","time":1073.828521676,"data":"           9     0.0000    0.0000    0.0000       104\n"}
+,{"stream_name":"stdout","time":1073.828527256,"data":"\n"}
+,{"stream_name":"stdout","time":1073.828532571,"data":"    accuracy                         0.1090      1000\n"}
+,{"stream_name":"stdout","time":1073.828539077,"data":"   macro avg     0.0109    0.1000    0.0197      1000\n"}
+,{"stream_name":"stdout","time":1073.828544634,"data":"weighted avg     0.0119    0.1090    0.0214      1000\n"}
+,{"stream_name":"stdout","time":1073.828550975,"data":"\n"}
+,{"stream_name":"stdout","time":1073.828556754,"data":"\n"}
+,{"stream_name":"stdout","time":1073.828561998,"data":"Final Results:\n"}
+,{"stream_name":"stdout","time":1073.828567515,"data":"  Test Loss: 3.6799\n"}
+,{"stream_name":"stdout","time":1073.828573123,"data":"  Test Accuracy: 0.1094\n"}
+,{"stream_name":"stdout","time":1073.828578249,"data":"  Parameters: 14,160,441\n"}
+,{"stream_name":"stdout","time":1073.828583379,"data":"  Best Epoch: 0\n"}
+,{"stream_name":"stdout","time":1073.828588668,"data":"\n"}
+,{"stream_name":"stdout","time":1073.828593923,"data":"Results saved to /kaggle/working/cve_evo_kaggle_final.json\n"}
+,{"stream_name":"stdout","time":1073.828599579,"data":"{\n"}
+,{"stream_name":"stdout","time":1073.828605501,"data":"  \"final_intel\": 0.109375,\n"}
+,{"stream_name":"stdout","time":1073.828611292,"data":"  \"final_loss\": 3.6798543632030487,\n"}
+,{"stream_name":"stdout","time":1073.828616956,"data":"  \"accuracy\": 0.109375,\n"}
+,{"stream_name":"stdout","time":1073.828622339,"data":"  \"parameters\": 14160441,\n"}
+,{"stream_name":"stdout","time":1073.828638336,"data":"  \"config\": {\n"}
+,{"stream_name":"stdout","time":1073.828642686,"data":"    \"latent_dim\": 574,\n"}
+,{"stream_name":"stdout","time":1073.828646768,"data":"    \"num_blocks\": 4,\n"}
+,{"stream_name":"stdout","time":1073.828650925,"data":"    \"max_act_steps\": 8,\n"}
+,{"stream_name":"stdout","time":1073.828655103,"data":"    \"vocab_size\": 119,\n"}
+,{"stream_name":"stdout","time":1073.828659301,"data":"    \"num_classes\": 10\n"}
+,{"stream_name":"stdout","time":1073.828663796,"data":"  },\n"}
+,{"stream_name":"stdout","time":1073.828667887,"data":"  \"epoch\": 0,\n"}
+,{"stream_name":"stdout","time":1073.828671604,"data":"  \"architecture\": \"reflective_neuralese\",\n"}
+,{"stream_name":"stdout","time":1073.828675861,"data":"  \"self_modification\": true,\n"}
+,{"stream_name":"stdout","time":1073.828680431,"data":"  \"causal_world_model\": true\n"}
+,{"stream_name":"stdout","time":1073.828684971,"data":"}\n"}
+,{"stream_name":"stderr","time":1073.829912421,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.\n"}
+,{"stream_name":"stderr","time":1073.829937638,"data":"  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n"}
+,{"stream_name":"stderr","time":1073.829942877,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.\n"}
+,{"stream_name":"stderr","time":1073.829947779,"data":"  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n"}
+,{"stream_name":"stderr","time":1073.829952027,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.\n"}
+,{"stream_name":"stderr","time":1073.82995679,"data":"  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n"}
+,{"stream_name":"stderr","time":1073.829960996,"data":"\n"}
+,{"stream_name":"stderr","time":1073.829964665,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.\n"}
+,{"stream_name":"stderr","time":1073.829976416,"data":"  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n"}
+,{"stream_name":"stderr","time":1073.829979663,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.\n"}
+,{"stream_name":"stderr","time":1073.829982796,"data":"  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n"}
+,{"stream_name":"stderr","time":1073.82998554,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.\n"}
+,{"stream_name":"stderr","time":1073.829988612,"data":"  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n"}
+,{"stream_name":"stderr","time":1079.410191821,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1079.410267527,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1079.616108184,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1079.616152913,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1080.518370361,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1080.60352903,"data":"[NbConvertApp] Writing 35606 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1083.446158748,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1084.115410103,"data":"[NbConvertApp] Writing 383759 bytes to __results__.html\n"}
+]

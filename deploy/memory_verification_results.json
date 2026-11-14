@@ -1,0 +1,17 @@
+{
+  "working_memory_mb": 2.0,
+  "ltm_gb": 20.5,
+  "episodic_compression": 0.1,
+  "ece": 0.0313,
+  "metacognitive": 0.7311,
+  "epistemic": 0.0444,
+  "aleatoric": 0.8318,
+  "ibp_range": [
+    0.0,
+    264.362
+  ],
+  "certified_radius": 0.0,
+  "redundancy_agreed": false,
+  "checksum_valid": true,
+  "gradient_check_passed": true
+}

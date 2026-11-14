@@ -1,0 +1,10 @@
+{
+  "experiment": "EXP-005_inference_time_gradient_adaptation",
+  "hypothesis": "H3: Inference-Time Gradient Adaptation",
+  "prediction": "On in-context learning tasks, inference-time fast weights achieve 90% of fine-tuning performance with 0 gradient steps",
+  "adaptive_fewshot_acc": 0.1,
+  "standard_fewshot_acc": 0.04,
+  "improvement": 0.060000000000000005,
+  "prediction_supported": true,
+  "seed": 137
+}

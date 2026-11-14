@@ -1,0 +1,87 @@
+{
+  "moe": {
+    "savings": {
+      "active_params": 1084046692.607004,
+      "total_params": 39800000000.0,
+      "sparsity_ratio": 0.9727626459143969,
+      "theoretical_speedup": 36.714285714285715,
+      "memory_savings": 0.9727626459143969
+    },
+    "load_balance_loss": 0.042008621603000576,
+    "z_loss": 36.517133722688484
+  },
+  "ssm": {
+    "complexity": {
+      "ssm_flops": 34359738368.0,
+      "attention_flops": 35184372088832.0,
+      "speedup": 1024.0,
+      "memory": 67108864.0
+    }
+  },
+  "reversible": {
+    "memory": {
+      "standard_mb": 2415.919104,
+      "reversible_mb": 402.653184,
+      "savings_factor": 6.0
+    }
+  },
+  "spiking": {
+    "energy": {
+      "snn_energy_j": 4.9999999999999996e-05,
+      "ann_energy_j": 0.003,
+      "energy_ratio": 0.016666666666666666,
+      "sparsity_advantage": 100.0
+    }
+  },
+  "hyperdimensional": {
+    "capacity": {
+      "max_items_reliable": 1500,
+      "max_items_noisy": 3000,
+      "dimension": 10000
+    }
+  },
+  "comparison": {
+    "dense_transformer": {
+      "flops_per_token": "O(L * D^2)",
+      "memory": "O(L * D)",
+      "parallelism": "High (training)",
+      "long_context": "Poor (quadratic)",
+      "hardware_fit": "Excellent (GPU/TPU)"
+    },
+    "moe": {
+      "flops_per_token": "O(L * D^2 * k/E)",
+      "memory": "O(L * D * E) weights",
+      "parallelism": "High (expert parallel)",
+      "long_context": "Moderate",
+      "hardware_fit": "Good (needs expert parallelism)"
+    },
+    "mamba_ssm": {
+      "flops_per_token": "O(L * D)",
+      "memory": "O(D)",
+      "parallelism": "Limited (sequential scan)",
+      "long_context": "Excellent (linear)",
+      "hardware_fit": "Good (custom kernels)"
+    },
+    "reversible": {
+      "flops_per_token": "O(L * D^2) + overhead",
+      "memory": "O(D) activations",
+      "parallelism": "Standard",
+      "long_context": "Standard",
+      "hardware_fit": "Good"
+    },
+    "spiking": {
+      "flops_per_token": "Event-driven (sparse)",
+      "memory": "O(D) state",
+      "parallelism": "Event-driven",
+      "long_context": "Natural (temporal)",
+      "hardware_fit": "Requires neuromorphic HW"
+    },
+    "hyperdimensional": {
+      "flops_per_token": "O(D) vector ops",
+      "memory": "O(D) symbols",
+      "parallelism": "Highly parallel",
+      "long_context": "Natural (compositional)",
+      "hardware_fit": "Good (simple ops)"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+[{"stream_name":"stderr","time":7.2940296700000005,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.294070237,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.294076099,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.294080334,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.84655992,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.846588396,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.846593679,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.8465979919999995,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":14.322770518,"data":"GPU: Tesla T4\n"}
+,{"stream_name":"stdout","time":14.32280547,"data":"Torch: 2.11.0+cu130\n"}
+,{"stream_name":"stdout","time":14.322808956,"data":"SSI v1120 - RECURSIVE.COM PARITY: NorMuon + Engram + FP8 + Agent-Native RSI\n"}
+,{"stream_name":"stderr","time":21.517521633,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":21.517552795,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":21.675116304,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":21.675141276,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":22.44558819,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":22.522174435,"data":"[NbConvertApp] Writing 418945 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":24.93167214,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":25.518153362,"data":"[NbConvertApp] Writing 771585 bytes to __results__.html\n"}
+]

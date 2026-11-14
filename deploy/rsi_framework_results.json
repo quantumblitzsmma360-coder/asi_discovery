@@ -1,0 +1,47 @@
+{
+  "rice_theorem": {
+    "theorem": "Semantic properties undecidable",
+    "implication": "Cannot auto-verify alignment/intelligence preservation",
+    "escape_routes": [
+      "Syntactic restrictions (QF_LRA, decidable fragments)",
+      "Proof-carrying modifications",
+      "Probabilistic verification with statistical bounds",
+      "Human-in-the-loop for semantic verification"
+    ]
+  },
+  "blum_speedup": {
+    "theorem": "No optimal self-improver exists",
+    "implication": "RSI cannot converge to 'optimal' system",
+    "mitigation": "Pareto-optimal frontier, not single optimum"
+  },
+  "goedel_incompleteness": {
+    "theorem": "System cannot prove its own consistency",
+    "implication": "Self-verification of improvement logic is fundamentally limited",
+    "mitigation": "External verification, reflective towers, oracles"
+  },
+  "rsi_trajectory_exponential": {
+    "1": 10.421095614440006,
+    "5": 39.953464688449294,
+    "10": 63.57993532402721,
+    "20": 86.60180695957534,
+    "50": 99.33294324709054,
+    "100": 99.99550540695351
+  },
+  "rsi_trajectory_powerlaw": {
+    "1": 30.8496231131986,
+    "5": 58.157676649772945,
+    "10": 71.00357133746822,
+    "20": 81.83316151184488,
+    "50": 91.37422198835242,
+    "100": 95.39279633531365
+  },
+  "verifiable_framework": {
+    "decidable_fragment": "QF_LRA",
+    "proof_system": "Z3",
+    "trusted_base": [
+      "Z3",
+      "Python runtime",
+      "Hardware"
+    ]
+  }
+}

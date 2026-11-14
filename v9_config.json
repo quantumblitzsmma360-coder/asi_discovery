@@ -1,0 +1,8 @@
+{
+  "latent_dim": 574,
+  "num_blocks": 4,
+  "max_act_steps": 8,
+  "physics_mode": "reversible",
+  "reflective": 1.0,
+  "self_mod_steps": 3
+}

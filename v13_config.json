@@ -1,0 +1,8 @@
+{
+  "latent_dim": 574,
+  "num_blocks": 5,
+  "max_act_steps": 8,
+  "physics_mode": "sparse",
+  "reflective": 0.5083109628639985,
+  "self_mod_steps": 3
+}

@@ -1,0 +1,29 @@
+{
+  "training": {
+    "flops_per_token": 240000000000.0,
+    "optimal_batch": 1
+  },
+  "quantization": {
+    "int4_snr_db": 15.782696140039205,
+    "estimated_accuracy": 0.9299999999999999,
+    "memory_savings": {
+      "fp32_gb": 160.0,
+      "quant_gb": 20.0,
+      "savings_factor": 8.0,
+      "savings_percent": 87.5
+    }
+  },
+  "sparsity": {
+    "pruning_remaining": 0.5,
+    "speedup": 2.0
+  },
+  "kernel": {
+    "flash_memory_reduction": 8.0,
+    "fusion_speedup": 4.705882352941176
+  },
+  "distributed": {
+    "pipeline_efficiency": 0.78125,
+    "tp_volume_mb": 83.88608,
+    "zero3_gb": 40.0
+  }
+}

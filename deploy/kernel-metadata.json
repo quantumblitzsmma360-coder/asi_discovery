@@ -1,0 +1,14 @@
+{
+  "id": "thamizhamudhuj/deterministic-asi-v1",
+  "title": "deterministic-asi-v1",
+  "code_file": "deterministic_asi_kaggle.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

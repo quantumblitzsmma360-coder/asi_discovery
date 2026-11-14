@@ -1,0 +1,12 @@
+{
+  "generalization": {
+    "mutual_info_bound": 1.6581015157406193e-06,
+    "mdl_bound": 1.6600000000029957,
+    "scaling_law_optimal": {
+      "N": 92755254112.23328,
+      "D": 1796843405388.1309,
+      "loss": 1.9180144494801759
+    },
+    "in_context_capacity": 13131.73086106932
+  }
+}

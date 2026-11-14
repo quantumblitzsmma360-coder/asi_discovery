@@ -1,0 +1,23 @@
+{
+  "experiment": "EXP-004_differentiable_plasticity",
+  "hypothesis": "H9: Selective Memory via Differentiable Plasticity",
+  "prediction": "On continual learning benchmarks, plasticity gates achieve <5% forgetting vs >30% for standard SGD",
+  "avg_forget_plastic": 0.0007812500000000111,
+  "avg_forget_standard": 0.02031249999999997,
+  "plastic_task_acc": [
+    0.5125,
+    0.5375,
+    0.503125,
+    0.49375,
+    0.49375
+  ],
+  "standard_task_acc": [
+    0.43125,
+    0.484375,
+    0.496875,
+    0.5375,
+    0.490625
+  ],
+  "prediction_supported": false,
+  "seed": 137
+}

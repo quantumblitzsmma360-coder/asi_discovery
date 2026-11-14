@@ -1,0 +1,9 @@
+{
+  "tor_service": false,
+  "tor_circuit": false,
+  "socks5_proxy": false,
+  "exit_ip": null,
+  "ip_masking": false,
+  "dns_leak": false,
+  "kaggle_tor": true
+}

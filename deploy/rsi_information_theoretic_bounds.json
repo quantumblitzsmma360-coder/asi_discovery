@@ -1,0 +1,138 @@
+{
+  "constants": {
+    "k_B": 1.380649e-23,
+    "T": 300.0,
+    "hbar": 1.054571817e-34,
+    "c": 299792458,
+    "landauer_energy_300K_J": 2.870978885078724e-21,
+    "landauer_energy_300K_eV": 0.0179192407638041,
+    "margolus_levitin_ops_per_J": 1.8965043136554824e+34,
+    "bremermann_limit_ops_per_s_per_kg": 1.356e+50
+  },
+  "scales": {
+    "Small agent (1K bits)": {
+      "system_complexity_bits": 1000.0,
+      "min_self_model_bits": 29.0774208908538,
+      "intelligence_gain_per_bit": 1.0,
+      "intelligence_gain_rate_bits_per_sec": 3.4831325482652566e+23,
+      "landauer": {
+        "landauer_energy_per_bit_J": 2.870978885078724e-21,
+        "irreversible_bits": 0.29000000000000026,
+        "minimum_energy_J": 8.325838766728306e-22,
+        "minimum_energy_eV": 0.005196579821503193,
+        "min_time_per_bit_s": 1.8366067101379657e-14,
+        "min_time_sequential_s": 5.3261594594001e-13,
+        "max_ops_per_sec_at_Emin": 15789989135900.275,
+        "reversibility_fraction": 0.99
+      },
+      "channel_capacity": {
+        "forward_capacity_bits": 29.91920686410409,
+        "upper_bound_bits": 30.0,
+        "achievable_rate_bits_per_step": 14.959603432052045,
+        "fixed_point_rate_bits": 0.967741935483871,
+        "observation_noise": 0.01,
+        "feedback_delay": 1.0,
+        "system_states": 1073741824.0
+      },
+      "max_recursion_depth": 0.0,
+      "time_per_recursion_s": 5.3261594594001e-13,
+      "total_time_for_max_recursion_s": 0.0,
+      "max_achievable_intelligence": 100.0,
+      "compute_budget_W": 1000.0,
+      "temperature_K": 300.0
+    },
+    "Human-scale (1M bits)": {
+      "system_complexity_bits": 1000000.0,
+      "min_self_model_bits": 17133.568174761043,
+      "intelligence_gain_per_bit": 1.0,
+      "intelligence_gain_rate_bits_per_sec": 3.4831325482652566e+23,
+      "landauer": {
+        "landauer_energy_per_bit_J": 2.870978885078724e-21,
+        "irreversible_bits": 171.33000000000015,
+        "minimum_energy_J": 4.918848123805382e-19,
+        "minimum_energy_eV": 3.070103520062559,
+        "min_time_per_bit_s": 1.8366067101379657e-14,
+        "min_time_sequential_s": 3.1466582764793767e-10,
+        "max_ops_per_sec_at_Emin": 9328616685013082.0,
+        "reversibility_fraction": 0.99
+      },
+      "channel_capacity": {
+        "forward_capacity_bits": 29.91920686410409,
+        "upper_bound_bits": 30.0,
+        "achievable_rate_bits_per_step": 14.959603432052045,
+        "fixed_point_rate_bits": 0.967741935483871,
+        "observation_noise": 0.01,
+        "feedback_delay": 1.0,
+        "system_states": 1073741824.0
+      },
+      "max_recursion_depth": 0.0,
+      "time_per_recursion_s": 3.1466582764793767e-10,
+      "total_time_for_max_recursion_s": 0.0,
+      "max_achievable_intelligence": 100.0,
+      "compute_budget_W": 1000.0,
+      "temperature_K": 300.0
+    },
+    "Superintelligence (1G bits)": {
+      "system_complexity_bits": 1000000000.0,
+      "min_self_model_bits": 17111668.503544573,
+      "intelligence_gain_per_bit": 1.0,
+      "intelligence_gain_rate_bits_per_sec": 3.4831325482652566e+23,
+      "landauer": {
+        "landauer_energy_per_bit_J": 2.870978885078724e-21,
+        "irreversible_bits": 171116.68000000014,
+        "minimum_energy_J": 4.912723751647732e-16,
+        "minimum_energy_eV": 3066.2809876228243,
+        "min_time_per_bit_s": 1.8366067101379657e-14,
+        "min_time_sequential_s": 3.1427404270453105e-07,
+        "max_ops_per_sec_at_Emin": 9.317001786797668e+18,
+        "reversibility_fraction": 0.99
+      },
+      "channel_capacity": {
+        "forward_capacity_bits": 29.91920686410409,
+        "upper_bound_bits": 30.0,
+        "achievable_rate_bits_per_step": 14.959603432052045,
+        "fixed_point_rate_bits": 0.967741935483871,
+        "observation_noise": 0.01,
+        "feedback_delay": 1.0,
+        "system_states": 1073741824.0
+      },
+      "max_recursion_depth": 0.0,
+      "time_per_recursion_s": 3.1427404270453105e-07,
+      "total_time_for_max_recursion_s": 0.0,
+      "max_achievable_intelligence": 100.0,
+      "compute_budget_W": 1000.0,
+      "temperature_K": 300.0
+    },
+    "Planetary-scale (1T bits)": {
+      "system_complexity_bits": 1000000000000.0,
+      "min_self_model_bits": 17111636648.054855,
+      "intelligence_gain_per_bit": 1.0,
+      "intelligence_gain_rate_bits_per_sec": 3.4831325482652566e+23,
+      "landauer": {
+        "landauer_energy_per_bit_J": 2.870978885078724e-21,
+        "irreversible_bits": 171116366.48000014,
+        "minimum_energy_J": 4.912714750554731e-13,
+        "minimum_energy_eV": 3066275.36958246,
+        "min_time_per_bit_s": 1.8366067101379657e-14,
+        "min_time_sequential_s": 0.00031427346689159527,
+        "max_ops_per_sec_at_Emin": 9.316984716185965e+21,
+        "reversibility_fraction": 0.99
+      },
+      "channel_capacity": {
+        "forward_capacity_bits": 29.91920686410409,
+        "upper_bound_bits": 30.0,
+        "achievable_rate_bits_per_step": 14.959603432052045,
+        "fixed_point_rate_bits": 0.967741935483871,
+        "observation_noise": 0.01,
+        "feedback_delay": 1.0,
+        "system_states": 1073741824.0
+      },
+      "max_recursion_depth": 0.0,
+      "time_per_recursion_s": 0.00031427346689159527,
+      "total_time_for_max_recursion_s": 0.0,
+      "max_achievable_intelligence": 100.0,
+      "compute_budget_W": 1000.0,
+      "temperature_K": 300.0
+    }
+  }
+}

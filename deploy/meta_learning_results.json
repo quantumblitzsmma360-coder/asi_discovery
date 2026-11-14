@@ -1,0 +1,8 @@
+{
+  "maml_gradient_norm": 18.728056761051143,
+  "ewc_penalty": 2490.565815692875,
+  "forgetting_measure": 0.05000000000000002,
+  "backward_transfer": -0.05000000000000002,
+  "distillation_loss": 0.04122734486684429,
+  "curiosity_top_uncertainty": 0.9260758576361671
+}

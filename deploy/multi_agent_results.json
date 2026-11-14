@@ -1,0 +1,43 @@
+{
+  "multi_agent": {
+    "n_agents": 4,
+    "roles": [
+      "proposer",
+      "implementer",
+      "evaluator",
+      "critic"
+    ]
+  },
+  "swarm_optimization": {
+    "best_pos": [
+      -0.0001252170977058813,
+      3.603773615157329e-05,
+      2.956721263169858e-05
+    ],
+    "best_score": -1.7852260047622717e-08
+  },
+  "debate": {
+    "n_rounds": 2,
+    "n_agents": 3
+  },
+  "collective_metrics": {
+    "diversity": 0.5,
+    "agreement": 0.6666666666666666,
+    "n_agents": 4
+  },
+  "recursive_improvements": {
+    "improvements": [
+      {
+        "type": "communication",
+        "change": "Add structured message format",
+        "reason": "2 failures detected"
+      },
+      {
+        "type": "roles",
+        "change": "Dynamic role assignment based on capability",
+        "reason": "Fixed roles may not suit all tasks"
+      }
+    ],
+    "n_failures": 2
+  }
+}

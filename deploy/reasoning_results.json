@@ -1,0 +1,14 @@
+{
+  "counterfactual_norm": 18.052917357578508,
+  "planning_value": -5308.147728280371,
+  "cot_steps": 5,
+  "tot_steps": 5,
+  "abstraction_levels": 4,
+  "abstraction_dims": [
+    1024,
+    256,
+    64,
+    16
+  ],
+  "programs_generated": 0
+}

@@ -1,0 +1,83 @@
+name: Reflective Neuralese ASI
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:
+  push:
+    paths:
+      - 'asi/**'
+
+jobs:
+  reflective-neuralese:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    strategy:
+      matrix:
+        worker: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+                 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+                 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+                 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
+                 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
+                 61, 62, 63, 64, 65, 66, 67, 68, 69, 70,
+                 71, 72, 73, 74, 75, 76, 77, 78, 79, 80,
+                 81, 82, 83, 84, 85, 86, 87, 88, 89, 90,
+                 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+        max-parallel: 100
+        fail-fast: false
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+          pip install numpy pandas scikit-learn tqdm
+
+      - name: Download reflective neuralese
+        run: |
+          mkdir -p asi
+          curl -L -o asi/reflective_neuralese.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/prototypes/reflective_neuralese.py
+          curl -L -o asi/causal_world_model.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/prototypes/causal_world_model.py
+          curl -L -o asi/physics_enhanced.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/prototypes/physics_enhanced_reflective_neuralese.py
+
+      - name: Run reflective neuralese
+        env:
+          WORKER_ID: ${{ matrix.worker }}
+          TOR_PROXY: socks5://127.0.0.1:9052
+        run: |
+          cd asi
+          python -c "
+import torch
+import sys
+sys.path.append('.')
+from reflective_neuralese import ReflectiveNeuralese
+from causal_world_model import CausalWorldModel
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print(f'Worker {os.environ["WORKER_ID"]} on {device}')
+
+# Quick self-modification test
+model = ReflectiveNeuralese(latent_dim=256, num_blocks=3).to(device)
+goal = torch.zeros(1, 5000, device=device)
+goal[0, 1] = 1.0
+goal[0, 2] = 1.0
+
+model.train()
+logits, cls, mods, _ = model(torch.randint(0, 1000, (4, 32), device=device), goal, self_mod_steps=1)
+print(f'Worker {os.environ["WORKER_ID"]}: Self-mod result: {mods}')
+"
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: worker-${{ matrix.worker }}-results
+          path: asi/*.pt
+          retention-days: 7

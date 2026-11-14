@@ -1,0 +1,28 @@
+{
+  "gap_hypotheses": 21,
+  "analogical_hypotheses": 0,
+  "counterfactual_hypotheses": 4,
+  "sample_size": 1000,
+  "design_matrix_shape": [
+    6,
+    2
+  ],
+  "discovery_iterations": 3,
+  "causal_adjacency": [
+    [
+      0.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      0.0
+    ]
+  ]
+}

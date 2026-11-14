@@ -1,0 +1,17 @@
+name = "reflective-neuralese-asi"
+main = "src/index.js"
+compatibility_date = "2024-11-13"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENVIRONMENT = "production"
+TOR_PROXY = "socks5://127.0.0.1:9052"
+
+[triggers]
+crons = ["0 */6 * * *"]
+
+[build]
+command = "npm run build"
+
+[deployment]
+name = "reflective-neuralese-asi"

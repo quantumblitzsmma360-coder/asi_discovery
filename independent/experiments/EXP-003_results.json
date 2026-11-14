@@ -1,0 +1,13 @@
+{
+  "experiment": "EXP-003_learned_structured_sparsity",
+  "hypothesis": "H8: Computational Efficiency via Learned Sparsity",
+  "prediction": "90% sparse + rank-64 model matches dense baseline perplexity within 0.05 while using 10x less compute",
+  "sparse_final_loss": 7.008854174613953,
+  "dense_final_loss": 6.854059700965881,
+  "sparse_eff_params": 856040,
+  "dense_eff_params": 2625512,
+  "param_ratio": 0.3260468815225373,
+  "loss_ratio": 1.0225843486052884,
+  "prediction_supported": false,
+  "seed": 137
+}

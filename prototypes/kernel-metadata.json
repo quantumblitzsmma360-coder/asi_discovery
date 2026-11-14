@@ -1,0 +1,24 @@
+{
+  "id": "thamizhamudhuj/reflective-neuralese-v1",
+  "title": "reflective-neuralese-v1",
+  "code_file": "reflective_neuralese_kaggle.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "girish17019/cvefixes-vulnerable-and-fixed-code",
+    "furduisorinoctavian/vulnerable-c-functions-for-security-prediction",
+    "hasaber8/cve-fix-pairs",
+    "cyberprince/vulnerable-programming-dataset"
+  ],
+  "keywords": [
+    "reflective-neuralese",
+    "autonomous-self-modification",
+    "cve-classification",
+    "asi",
+    "recursive-self-improvement"
+  ],
+  "enable_tpu": false
+}

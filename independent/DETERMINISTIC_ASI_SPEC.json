@@ -1,0 +1,27 @@
+{
+  "architecture": "DeterministicASI",
+  "guarantees": [
+    "Formal self-model (symbolic interpreter)",
+    "Decidable modification language (linear arithmetic)",
+    "SMT-based verification (sound + complete)",
+    "Contraction mapping with k=0.5",
+    "Provably monotonic intelligence operator"
+  ],
+  "theorems": [
+    "Banach Fixed-Point: Convergence guaranteed if I is contraction",
+    "Self-model fidelity bound: f_M > 1 - epsilon",
+    "Rice Theorem escape: Restrict to decidable fragment",
+    "Channel capacity: I_{t+1} - I_t <= C * K_t where C = log2(1+SNR)"
+  ],
+  "components": {
+    "FormalSelfModel": "Symbolic AST interpreter",
+    "LinearArithmeticFragment": "Decidable modification language",
+    "SMTDVerificationEngine": "Z3-based verification",
+    "ProvableIntelligenceOperator": "Monotonic improvement proof"
+  },
+  "parameters": {
+    "d_model": 512,
+    "num_blocks": 4,
+    "contraction_k": 0.5
+  }
+}
