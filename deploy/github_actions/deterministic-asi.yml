@@ -1,0 +1,148 @@
+name: Deterministic ASI - Autonomous RSI
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'  # Every 4 hours
+  workflow_dispatch:
+  push:
+    paths:
+      - 'asi/**'
+
+jobs:
+  deterministic-asi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      matrix:
+        worker: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+                 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+                 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+                 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
+                 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
+                 61, 62, 63, 64, 65, 66, 67, 68, 69, 70,
+                 71, 72, 73, 74, 75, 76, 77, 78, 79, 80,
+                 81, 82, 83, 84, 85, 86, 87, 88, 89, 90,
+                 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+        max-parallel: 100
+        fail-fast: false
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+          pip install numpy pandas scikit-learn tqdm z3-solver
+
+      - name: Download DeterministicASI source
+        run: |
+          mkdir -p asi
+          curl -L -o asi/deterministic_asi.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/independent/deterministic_asi.py
+          curl -L -o asi/formal_self_model.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/deploy/milestone0/formal_self_model.py
+          curl -L -o asi/verification_engine.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/deploy/milestone0/verification_engine.py
+          curl -L -o asi/intelligence_operator.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/deploy/milestone0/intelligence_operator.py
+          curl -L -o asi/core_loop.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/deploy/milestone0/core_loop.py
+          curl -L -o asi/modification_language.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/deploy/milestone0/modification_language.py
+
+      - name: Run DeterministicASI
+        env:
+          WORKER_ID: ${{ matrix.worker }}
+          TOR_PROXY: socks5://127.0.0.1:9052
+          SEED: 137
+        run: |
+          cd asi
+          python -c "
+import torch
+import os
+import sys
+sys.path.append('.')
+
+from deterministic_asi import DeterministicASI, ASIConfig
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print(f'Worker {os.environ[\"WORKER_ID\"]} on {device}')
+
+# Config for this worker
+config = ASIConfig(
+    latent_dim=512,
+    max_ast_depth=10,
+    verification_timeout=30,
+    modification_budget=1000,
+    seed=int(os.environ['SEED']) + int(os.environ['WORKER_ID'])
+)
+
+asi = DeterministicASI(config).to(device)
+
+# Generate synthetic CVE data
+torch.manual_seed(config.seed)
+num_samples = 1000
+num_features = 100
+num_classes = 10
+X = torch.randn(num_samples, num_features, device=device)
+y = torch.randint(0, num_classes, (num_samples,), device=device)
+
+# Run autonomous RSI loop
+results = asi.autonomous_rsi_loop(
+    X, y,
+    generations=5,
+    verification_interval=10
+)
+
+print(f'Worker {os.environ[\"WORKER_ID\"]}: Final intelligence = {results[\"final_intelligence\"]:.4f}')
+print(f'Worker {os.environ[\"WORKER_ID\"]}: Modifications = {results[\"total_modifications\"]}')
+print(f'Worker {os.environ[\"WORKER_ID\"]}: Verified = {results[\"verified_modifications\"]}')
+
+# Save genome
+torch.save({
+    'genome': asi.export_genome(),
+    'config': config.__dict__,
+    'results': results,
+    'worker_id': os.environ['WORKER_ID']
+}, f'deterministic_asi_genome_worker_{os.environ[\"WORKER_ID\"]}.pt')
+"
+
+      - name: Upload genome artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: deterministic-asi-genomes
+          path: asi/*.pt
+          retention-days: 30
+
+      - name: Merge genomes and create next generation
+        if: matrix.worker == 1
+        run: |
+          cd asi
+          python -c "
+import torch
+import glob
+
+# Collect all genomes
+genome_files = glob.glob('deterministic_asi_genome_worker_*.pt')
+genomes = [torch.load(f) for f in genome_files]
+
+# Select best by intelligence
+best = max(genomes, key=lambda g: g['results']['final_intelligence'])
+print(f'Best worker: {best[\"worker_id\"]} with intelligence {best[\"results\"][\"final_intelligence\"]:.4f}')
+
+# Save merged genome for next generation
+torch.save(best, 'deterministic_asi_best_genome.pt')
+print('Best genome saved for next generation')
+"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit best genome
+        if: matrix.worker == 1
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "ASI: DeterministicASI generation update - intelligence ${{ steps.merge.outputs.best_intel }}"
+          file_pattern: asi/deterministic_asi_best_genome.pt
+          commit_user_name: asi-automation
+          commit_user_email: asi@warfooting.ai
