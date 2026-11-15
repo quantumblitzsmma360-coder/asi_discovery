@@ -38,23 +38,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+          pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
           pip install numpy pandas scikit-learn tqdm z3-solver
-
-      - name: Download DeterministicASI source
-        run: |
-          mkdir -p asi
-          curl -L -o asi/deterministic_asi.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/independent/deterministic_asi.py
-          curl -L -o asi/formal_self_model.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/deploy/milestone0/formal_self_model.py
-          curl -L -o asi/verification_engine.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/deploy/milestone0/verification_engine.py
-          curl -L -o asi/intelligence_operator.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/deploy/milestone0/intelligence_operator.py
-          curl -L -o asi/core_loop.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/deploy/milestone0/core_loop.py
-          curl -L -o asi/modification_language.py https://raw.githubusercontent.com/${{ github.repository }}/main/asi_discovery/deploy/milestone0/modification_language.py
 
       - name: Run DeterministicASI
         env:
           WORKER_ID: ${{ matrix.worker }}
-          TOR_PROXY: socks5://127.0.0.1:9052
           SEED: 137
         run: |
           cd asi
