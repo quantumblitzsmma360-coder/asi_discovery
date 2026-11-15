@@ -552,7 +552,7 @@
       "Cron asi-continuous-discovery runs every 4h"
     ]
   },
-  "last_updated": "2026-11-15T13:00:00Z",
+  "last_updated": "2026-11-15T13:10:00Z",
   "cron_jobs": {
     "asi_continuous_discovery": {
       "job_id": "f9bea1de6cc5",
@@ -588,7 +588,8 @@
     "workers_completed": 100,
     "genomes_generated": 100,
     "best_genome_committed": true,
-    "next_scheduled_run": "~2026-11-15T16:35:18Z (cron every 4h)"
+    "next_scheduled_run": "~2026-11-15T16:35:18Z (cron every 4h)",
+    "auto_schedule_active": true
   },
   "continuous_operation": {
     "github_actions_runs_completed": 2,
@@ -597,6 +598,8 @@
     "cloudflare_worker_url": "https://reflective-neuralese-asi.23m229.workers.dev/",
     "kaggle_kernels_complete": 2,
     "agentpub_agents_dmd": 79,
-    "cron_jobs_active": true
+    "cron_jobs_active": true,
+    "autonomous_since": "2026-11-15T12:35:18Z",
+    "hours_autonomous": 0.5
   }
 }
