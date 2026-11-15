@@ -1,0 +1,40 @@
+# Large model files
+*.pt
+*.bin
+*.onnx
+*.gguf
+*.safetensors
+
+# Kaggle outputs
+kaggle_output/*.pt
+kaggle_output/*.bin
+
+# Node modules
+node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Large data files
+*.csv
+*.parquet
+*.h5
+*.hdf5
