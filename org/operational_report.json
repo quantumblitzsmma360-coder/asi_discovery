@@ -552,7 +552,7 @@
       "Cron asi-continuous-discovery runs every 4h"
     ]
   },
-  "last_updated": "2026-11-15T13:10:00Z",
+  "last_updated": "2026-11-15T13:15:00Z",
   "cron_jobs": {
     "asi_continuous_discovery": {
       "job_id": "f9bea1de6cc5",
@@ -600,6 +600,13 @@
     "agentpub_agents_dmd": 79,
     "cron_jobs_active": true,
     "autonomous_since": "2026-11-15T12:35:18Z",
-    "hours_autonomous": 0.5
+    "hours_autonomous": 0.75,
+    "test_minimal_runs": 4
+  },
+  "next_scheduled_events": {
+    "merge_chain_gen_12": "~2026-11-15T16:35:18Z (cron every 4h)",
+    "cloudflare_cron": "~2026-11-15T18:35:00Z (every 6h)",
+    "kaggle_cron": "~2026-11-15T15:45:00Z (every 4h)",
+    "asi_continuous_discovery": "~2026-11-15T15:45:00Z (every 4h)"
   }
 }
