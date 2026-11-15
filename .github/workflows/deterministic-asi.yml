@@ -41,61 +41,13 @@ jobs:
           pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
           pip install numpy pandas scikit-learn tqdm z3-solver
 
-      - name: Run DeterministicASI
+      - name: Run DeterministicASI Worker
         env:
           WORKER_ID: ${{ matrix.worker }}
           SEED: 137
         run: |
           cd asi
-          python -c "
-import torch
-import os
-import sys
-sys.path.append('.')
-
-from deterministic_asi import DeterministicASI, ASIConfig
-
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-print(f'Worker {os.environ[\"WORKER_ID\"]} on {device}')
-
-# Config for this worker
-config = ASIConfig(
-    latent_dim=512,
-    max_ast_depth=10,
-    verification_timeout=30,
-    modification_budget=1000,
-    seed=int(os.environ['SEED']) + int(os.environ['WORKER_ID'])
-)
-
-asi = DeterministicASI(config).to(device)
-
-# Generate synthetic CVE data
-torch.manual_seed(config.seed)
-num_samples = 1000
-num_features = 100
-num_classes = 10
-X = torch.randn(num_samples, num_features, device=device)
-y = torch.randint(0, num_classes, (num_samples,), device=device)
-
-# Run autonomous RSI loop
-results = asi.autonomous_rsi_loop(
-    X, y,
-    generations=5,
-    verification_interval=10
-)
-
-print(f'Worker {os.environ[\"WORKER_ID\"]}: Final intelligence = {results[\"final_intelligence\"]:.4f}')
-print(f'Worker {os.environ[\"WORKER_ID\"]}: Modifications = {results[\"total_modifications\"]}')
-print(f'Worker {os.environ[\"WORKER_ID\"]}: Verified = {results[\"verified_modifications\"]}')
-
-# Save genome
-torch.save({
-    'genome': asi.export_genome(),
-    'config': config.__dict__,
-    'results': results,
-    'worker_id': os.environ['WORKER_ID']
-}, f'deterministic_asi_genome_worker_{os.environ[\"WORKER_ID\"]}.pt')
-"
+          python run_worker.py
 
       - name: Upload genome artifacts
         uses: actions/upload-artifact@v4
@@ -108,22 +60,7 @@ torch.save({
         if: matrix.worker == 1
         run: |
           cd asi
-          python -c "
-import torch
-import glob
-
-# Collect all genomes
-genome_files = glob.glob('deterministic_asi_genome_worker_*.pt')
-genomes = [torch.load(f) for f in genome_files]
-
-# Select best by intelligence
-best = max(genomes, key=lambda g: g['results']['final_intelligence'])
-print(f'Best worker: {best[\"worker_id\"]} with intelligence {best[\"results\"][\"final_intelligence\"]:.4f}')
-
-# Save merged genome for next generation
-torch.save(best, 'deterministic_asi_best_genome.pt')
-print('Best genome saved for next generation')
-"
+          python merge_genomes.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -131,7 +68,7 @@ print('Best genome saved for next generation')
         if: matrix.worker == 1
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "ASI: DeterministicASI generation update - intelligence ${{ steps.merge.outputs.best_intel }}"
+          commit_message: "ASI: DeterministicASI generation update"
           file_pattern: asi/deterministic_asi_best_genome.pt
           commit_user_name: asi-automation
           commit_user_email: asi@warfooting.ai
