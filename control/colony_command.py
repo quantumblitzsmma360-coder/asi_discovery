@@ -246,7 +246,7 @@ class ColonyCommand:
         self.results[f"{command}_{int(time.time())}"] = summary
         log.info(f"Aggregated: {summary['successful']}/{summary['total_agents']} successful")
 
-    async def _update_shared_kb(self, command: str, results: Dict[str, Any]):
+                async def _update_shared_kb(self, command: str, results: Dict[str, Any]):
         kb_entry = {
             "type": "colony_contribution",
             "command": command,
@@ -264,29 +264,27 @@ class ColonyCommand:
                             "type": key,
                             "value": result[key]
                         })
-                        
+        
         kb_path = os.path.join(self.shared_kb_path, "queries", f"colony_{command}_{int(time.time())}.md")
         os.makedirs(os.path.dirname(kb_path), exist_ok=True)
         
         with open(kb_path, "w") as f:
             f.write("# Colony Contribution: " + command + "
-
 ")
             f.write("**Timestamp**: " + kb_entry["timestamp"] + "
 ")
             f.write("**Agents**: " + str(kb_entry["agents_contributed"]) + "
-
 ")
             f.write("## Discoveries
 
 ")
             for d in kb_entry["discoveries"]:
-                f.write("- **" + d["agent"] + "** (" + d["type"] + ") : 
+                f.write(f"- **{d['agent']}** ({d['type']}) : {d['value']}
 ")
-                
+        
         log.info(f"Updated shared KB: {kb_path}")
 
-    async def _sync_colony(self):
+async def _sync_colony(self):
         genomes = await self.broadcast_command("get-genome", {}, ["github", "huggingface"])
         
         best_genome = None
