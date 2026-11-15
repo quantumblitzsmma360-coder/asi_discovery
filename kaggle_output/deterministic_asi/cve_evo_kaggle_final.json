@@ -1,0 +1,67 @@
+{
+  "generations": [
+    {
+      "generation": 0,
+      "intelligence": 18.285451889038086,
+      "time": 0.6600186824798584,
+      "modifications": 0
+    },
+    {
+      "generation": 1,
+      "intelligence": 18.285451889038086,
+      "time": 0.1365218162536621,
+      "modifications": 0
+    },
+    {
+      "generation": 2,
+      "intelligence": 18.285451889038086,
+      "time": 0.1432359218597412,
+      "modifications": 0
+    },
+    {
+      "generation": 3,
+      "intelligence": 18.285451889038086,
+      "time": 0.13758420944213867,
+      "modifications": 0
+    },
+    {
+      "generation": 4,
+      "intelligence": 18.285451889038086,
+      "time": 0.143815279006958,
+      "modifications": 0
+    },
+    {
+      "generation": 5,
+      "intelligence": 18.285451889038086,
+      "time": 0.13805317878723145,
+      "modifications": 1
+    },
+    {
+      "generation": 6,
+      "intelligence": 18.285451889038086,
+      "time": 0.14134740829467773,
+      "modifications": 1
+    },
+    {
+      "generation": 7,
+      "intelligence": 18.285451889038086,
+      "time": 0.13963699340820312,
+      "modifications": 1
+    },
+    {
+      "generation": 8,
+      "intelligence": 18.285451889038086,
+      "time": 0.14241313934326172,
+      "modifications": 1
+    },
+    {
+      "generation": 9,
+      "intelligence": 18.285451889038086,
+      "time": 0.1504039764404297,
+      "modifications": 1
+    }
+  ],
+  "final_intelligence": 18.285451889038086,
+  "total_modifications": 1,
+  "verified_modifications": 1
+}

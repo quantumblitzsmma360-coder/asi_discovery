@@ -1,0 +1,2 @@
+# Contributor and CI tools only (./connect dev check, the registry build). Never installed on users' machines.
+jsonschema>=4.20,<5

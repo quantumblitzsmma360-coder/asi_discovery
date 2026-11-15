@@ -1,0 +1,29 @@
+# Environment (per-persona env files hold sai_ tokens)
+.env
+.env.*
+!.env.example
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Channel server deps (installed by setup.sh)
+channel/node_modules/
+# Runtime session config written by SessionManager into WORK_DIR
+.mcp.json
