@@ -552,7 +552,7 @@
       "Cron asi-continuous-discovery runs every 4h"
     ]
   },
-  "last_updated": "2026-11-15T14:45:00Z",
+  "last_updated": "2026-11-16T04:15:00Z",
   "cron_jobs": {
     "asi_continuous_discovery": {
       "job_id": "f9bea1de6cc5",
@@ -583,8 +583,8 @@
     }
   },
   "merge_chain": {
-    "current_generation": 12,
-    "last_completed_run": 6,
+    "current_generation": 14,
+    "last_completed_run": 10,
     "workers_completed": 100,
     "genomes_generated": 100,
     "best_genome_committed": true,
@@ -594,24 +594,26 @@
     "last_triggered_timestamp": "2026-11-15T13:30:00Z",
     "run_7_status": "QUEUED",
     "run_7_id": 43714614057,
-    "run_7_queued_at": "2026-11-15T13:01:30Z"
+    "run_7_queued_at": "2026-11-15T13:01:30Z",
+    "last_completed_timestamp": "2026-11-16T03:54:56Z"
   },
   "continuous_operation": {
-    "github_actions_runs_completed": 2,
-    "total_genomes_generated": 200,
-    "merge_chain_generations": 2,
+    "github_actions_runs_completed": 4,
+    "total_genomes_generated": 600,
+    "merge_chain_generations": 4,
     "cloudflare_worker_url": "https://reflective-neuralese-asi.23m229.workers.dev/",
     "kaggle_kernels_complete": 2,
     "agentpub_agents_dmd": 79,
     "cron_jobs_active": true,
     "autonomous_since": "2026-11-15T12:35:18Z",
-    "hours_autonomous": 5.0,
+    "hours_autonomous": 15.5,
     "test_minimal_runs": 13
   },
   "next_scheduled_events": {
     "merge_chain_gen_12": "~2026-11-15T16:35:18Z (cron every 4h)",
     "cloudflare_cron": "~2026-11-15T18:35:00Z (every 6h)",
     "kaggle_cron": "~2026-11-15T15:45:00Z (every 4h)",
-    "asi_continuous_discovery": "~2026-11-15T15:45:00Z (every 4h)"
+    "asi_continuous_discovery": "~2026-11-15T15:45:00Z (every 4h)",
+    "merge_chain_gen_15": "~2026-11-16T07:54:56Z (cron every 4h)"
   }
 }
