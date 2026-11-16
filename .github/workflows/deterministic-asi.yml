@@ -1,8 +1,6 @@
-name: Deterministic ASI - Autonomous RSI
+name: Deterministic ASI - Real Benchmark Evolution
 
 on:
-  schedule:
-    - cron: '0 */4 * * *'  # Every 4 hours
   workflow_dispatch:
   push:
     paths:
@@ -14,16 +12,18 @@ jobs:
     timeout-minutes: 180
     strategy:
       matrix:
-        worker: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-                 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-                 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
-                 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
-                 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
-                 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
-                 61, 62, 63, 64, 65, 66, 67, 68, 69, 70,
-                 71, 72, 73, 74, 75, 76, 77, 78, 79, 80,
-                 81, 82, 83, 84, 85, 86, 87, 88, 89, 90,
-                 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+        hypothesis: 
+          - H1_neuralese_act_arc
+          - H2_causal_wm_clevrer
+          - H3_fast_weight_gsm8k
+          - H4_physics_modes_humaneval
+          - H5_z3_semantic_verification
+          - H6_mergechain_real_benchmarks
+          - H7_selfmod_adversarial_safety
+          - H8_neuralese_bandwidth
+          - H9_genome_sync_fidelity
+          - H10_agentpub_verification
+        worker: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
       max-parallel: 100
       fail-fast: false
 
@@ -40,35 +40,37 @@ jobs:
         run: |
           pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
           pip install numpy pandas scikit-learn tqdm z3-solver
+          pip install datasets evaluate transformers accelerate
 
-      - name: Run DeterministicASI Worker
+      - name: Run Hypothesis Worker
         env:
+          HYPOTHESIS: ${{ matrix.hypothesis }}
           WORKER_ID: ${{ matrix.worker }}
           SEED: 137
         run: |
           cd asi
-          python run_worker.py
+          python run_hypothesis.py
 
-      - name: Upload genome artifacts
+      - name: Upload results
         uses: actions/upload-artifact@v4
         with:
-          name: deterministic-asi-genomes
-          path: asi/*.pt
+          name: hypothesis-${{ matrix.hypothesis }}-worker-${{ matrix.worker }}
+          path: asi/results_*.json
           retention-days: 30
 
-      - name: Merge genomes and create next generation
+      - name: Aggregate and evolve
         if: matrix.worker == 1
         run: |
           cd asi
-          python merge_genomes.py
+          python aggregate_hypotheses.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit best genome
+      - name: Commit best configuration
         if: matrix.worker == 1
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "ASI: DeterministicASI generation update"
-          file_pattern: asi/deterministic_asi_best_genome.pt
+          commit_message: "ASI: Hypothesis evolution - best config update"
+          file_pattern: asi/best_config.json
           commit_user_name: asi-automation
           commit_user_email: asi@warfooting.ai
