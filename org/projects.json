@@ -1,0 +1,472 @@
+{
+  "D1_THEORETICAL_INTELLIGENCE": [
+    {
+      "id": "D1-P1",
+      "title": "Formalise Intelligence Metrics Beyond Proxy Measures",
+      "objective": "Replace log2(param_count) with capability-correlated metrics",
+      "required_expertise": [
+        "Learning theory",
+        "Information theory",
+        "Statistical learning"
+      ],
+      "deliverable": "Mathematical framework for capability-correlated intelligence metric",
+      "dependencies": [
+        "D2-P1 (Z3 verification)"
+      ],
+      "verification": "Independent mathematical proof + empirical correlation with benchmarks",
+      "budget": "THEORETICAL",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D1-P2",
+      "title": "Learning Theory for Recursive Self-Improvement",
+      "objective": "Formalise convergence bounds for merge-chain evolution",
+      "required_expertise": [
+        "Statistical learning theory",
+        "Optimization theory",
+        "Dynamical systems"
+      ],
+      "deliverable": "Convergence proof for merge-chain under realistic assumptions",
+      "dependencies": [
+        "D2-P2 (Banach fixed-point)"
+      ],
+      "verification": "Formal proof + empirical validation on merge-chain data",
+      "budget": "THEORETICAL",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D1-P3",
+      "title": "Reasoning and Generalisation Bounds for Neuralese",
+      "objective": "Prove generalisation advantages of latent-space reasoning",
+      "required_expertise": [
+        "Statistical learning theory",
+        "Representation learning",
+        "Information bottleneck"
+      ],
+      "deliverable": "Theorem: Neuralese bandwidth -> generalisation gap reduction",
+      "dependencies": [
+        "D3-P1 (Neuralese architecture)"
+      ],
+      "verification": "Formal proof + empirical validation on H1/H8",
+      "budget": "THEORETICAL",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    }
+  ],
+  "D2_MATHEMATICAL_RESEARCH": [
+    {
+      "id": "D2-P1",
+      "title": "Z3 Semantic Verification Soundness",
+      "objective": "Prove Z3 QF_LRA verification is sound for self-modification safety",
+      "required_expertise": [
+        "SMT solving",
+        "Formal verification",
+        "Linear arithmetic"
+      ],
+      "deliverable": "Theorem: If Z3 verifies, modification preserves safety property",
+      "dependencies": [],
+      "verification": "Formal proof in Coq/Lean + adversarial testing",
+      "budget": "THEORETICAL",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D2-P2",
+      "title": "Banach Fixed-Point Convergence for ASI Core Loop",
+      "objective": "Prove DeterministicASI core loop converges under k=0.5 contraction",
+      "required_expertise": [
+        "Functional analysis",
+        "Fixed-point theory",
+        "Metric spaces"
+      ],
+      "deliverable": "Theorem: Core loop converges to unique fixed point",
+      "dependencies": [
+        "D2-P1 (Z3 soundness)"
+      ],
+      "verification": "Formal proof + empirical validation on DeterministicASI v50",
+      "budget": "THEORETICAL",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D2-P3",
+      "title": "Information-Theoretic Bounds on RSI",
+      "objective": "Derive minimum self-model bits and max intelligence gain per bit",
+      "required_expertise": [
+        "Information theory",
+        "Kolmogorov complexity",
+        "Rate-distortion theory"
+      ],
+      "deliverable": "Bounds: min_bits, max_gain/bit, Landauer limit at 300K",
+      "dependencies": [],
+      "verification": "Formal derivation + numerical validation",
+      "budget": "THEORETICAL",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D2-P4",
+      "title": "Rice Theorem Escape Conditions for QF_LRA",
+      "objective": "Characterise exactly which self-properties are decidable in QF_LRA",
+      "required_expertise": [
+        "Computability theory",
+        "SMT solving",
+        "Decidable fragments"
+      ],
+      "deliverable": "Complete classification of decidable self-modification properties",
+      "dependencies": [
+        "D2-P1 (Z3 soundness)"
+      ],
+      "verification": "Formal proof + exhaustive enumeration of QF_LRA properties",
+      "budget": "THEORETICAL",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    }
+  ],
+  "D3_AI_ARCHITECTURE_ENGINEERING": [
+    {
+      "id": "D3-P1",
+      "title": "Optimise Reflective Neuralese Core Architecture",
+      "objective": "Improve latent dimension, block count, ACT steps for real benchmarks",
+      "required_expertise": [
+        "Neural architecture search",
+        "PyTorch",
+        "Distributed training"
+      ],
+      "deliverable": "Optimised Neuralese config with >0.79 on ARC/MMLU/GSM8K/HumanEval/BBH",
+      "dependencies": [
+        "D4-P1 (Benchmark baselines)"
+      ],
+      "verification": "5+ seeds, statistical significance, independent replication",
+      "budget": "GPU_HEAVY",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D3-P2",
+      "title": "Fast Weight Memory Integration",
+      "objective": "Integrate FWM as external plain class (zero autograd interference)",
+      "required_expertise": [
+        "Meta-learning",
+        "PyTorch internals",
+        "Memory systems"
+      ],
+      "deliverable": "FWM module with 16% few-shot adaptation on GSM8K (reproduce EXP-005)",
+      "dependencies": [
+        "D1-P3 (Reasoning bounds)"
+      ],
+      "verification": "Reproduce EXP-005 + extend to multiple benchmarks",
+      "budget": "GPU_MEDIUM",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D3-P3",
+      "title": "Physics-Enhanced Reasoning Blocks",
+      "objective": "Optimise 6 physics modes for energy-delay-product vs accuracy tradeoff",
+      "required_expertise": [
+        "Neuromorphic computing",
+        "Reversible computing",
+        "Sparse coding"
+      ],
+      "deliverable": "Optimal physics mode per benchmark + energy-delay measurements",
+      "dependencies": [
+        "D4-P4 (Physics mode benchmarking)"
+      ],
+      "verification": "Energy-delay-product measurements + accuracy on all 5 benchmarks",
+      "budget": "GPU_MEDIUM",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D3-P4",
+      "title": "Merge-Chain Genome Crossover Operators",
+      "objective": "Design crossover/mutation operators that preserve verified improvements",
+      "required_expertise": [
+        "Evolutionary algorithms",
+        "Weight space geometry",
+        "Model soups"
+      ],
+      "deliverable": "Crossover operators with >0% improvement per generation on real benchmarks",
+      "dependencies": [
+        "D5-P1 (Merge-chain infrastructure)"
+      ],
+      "verification": "100-gen evolution with measurable capability improvement",
+      "budget": "GPU_HEAVY",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    }
+  ],
+  "D4_EXPERIMENTAL_SCIENCE": [
+    {
+      "id": "D4-P1",
+      "title": "Establish Baseline Performance on All Benchmarks",
+      "objective": "Run frozen SOTA baselines on ARC/MMLU/GSM8K/HumanEval/BBH",
+      "required_expertise": [
+        "Benchmarking",
+        "Statistical analysis",
+        "Reproducibility"
+      ],
+      "deliverable": "Baseline scores with 5+ seeds, confidence intervals, compute budgets",
+      "dependencies": [],
+      "verification": "Independent replication by D7",
+      "budget": "GPU_HEAVY",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D4-P2",
+      "title": "Run 10 Hypotheses on Real Benchmarks",
+      "objective": "Execute H1-H10 on ARC/MMLU/GSM8K/HumanEval/BBH/CLEVRER/Adversarial",
+      "required_expertise": [
+        "Experimental design",
+        "Statistical analysis",
+        "Distributed execution"
+      ],
+      "deliverable": "Results for all 10 hypotheses with statistical significance (p<0.05, 5+ seeds)",
+      "dependencies": [
+        "D4-P1 (Baselines)"
+      ],
+      "verification": "Independent replication by D7",
+      "budget": "GPU_HEAVY",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D4-P3",
+      "title": "Statistical Significance Testing Framework",
+      "objective": "Implement rigorous statistical testing for all experiments",
+      "required_expertise": [
+        "Statistics",
+        "Hypothesis testing",
+        "Multiple comparison correction"
+      ],
+      "deliverable": "Framework with p<0.05, Bonferroni correction, effect sizes, power analysis",
+      "dependencies": [],
+      "verification": "D7 validates on all experimental results",
+      "budget": "THEORETICAL",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D4-P4",
+      "title": "Physics Mode Benchmarking on HumanEval",
+      "objective": "Measure energy-delay-product for all 6 physics modes",
+      "required_expertise": [
+        "Energy measurement",
+        "Latency profiling",
+        "Neuromorphic simulation"
+      ],
+      "deliverable": "Energy-delay-accuracy Pareto frontier for 6 physics modes",
+      "dependencies": [
+        "D3-P3 (Physics blocks)"
+      ],
+      "verification": "Independent measurement on target hardware",
+      "budget": "GPU_MEDIUM",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    }
+  ],
+  "D5_COMPUTATIONAL_RESEARCH": [
+    {
+      "id": "D5-P1",
+      "title": "Maximise GitHub Actions 100-Worker Utilisation",
+      "objective": "Run 1000 experiments per 4-hour cycle with minimal overhead",
+      "required_expertise": [
+        "GitHub Actions",
+        "Distributed systems",
+        "Queue management"
+      ],
+      "deliverable": "100-worker pipeline with <5% overhead, auto-recovery, artifact collection",
+      "dependencies": [],
+      "verification": "10 consecutive successful runs",
+      "budget": "INFRASTRUCTURE",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D5-P2",
+      "title": "Optimise Cloudflare Workers 500-Edge Deployment",
+      "objective": "Continuous self-modification at edge with <100ms latency",
+      "required_expertise": [
+        "Edge computing",
+        "Wrangler",
+        "KV namespaces",
+        "WebAssembly"
+      ],
+      "deliverable": "500-edge deployment with merge-chain evolution every 6h",
+      "dependencies": [
+        "D3-P4 (Crossover operators)"
+      ],
+      "verification": "100+ consecutive edge generations",
+      "budget": "INFRASTRUCTURE",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D5-P3",
+      "title": "Manage Kaggle 3-Account Rotation (90h/week)",
+      "objective": "Autonomous kernel push, heartbeat, quota management",
+      "required_expertise": [
+        "Kaggle API",
+        "GPU quota management",
+        "Cron automation"
+      ],
+      "deliverable": "Zero-downtime 3-account rotation with heartbeat + 30-min gen cap",
+      "dependencies": [],
+      "verification": "30+ consecutive days without quota burnout",
+      "budget": "INFRASTRUCTURE",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D5-P4",
+      "title": "Deploy OpenHands for Infrastructure Automation",
+      "objective": "Automate artifact download, benchmark execution, code maintenance",
+      "required_expertise": [
+        "OpenHands",
+        "Docker",
+        "CI/CD",
+        "Kubernetes"
+      ],
+      "deliverable": "OpenHands autonomously managing ASI infrastructure",
+      "dependencies": [
+        "OpenHands deployed at localhost:3000"
+      ],
+      "verification": "OpenHands completes 5+ infrastructure tasks autonomously",
+      "budget": "INFRASTRUCTURE",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    }
+  ],
+  "D6_RESEARCH_INTELLIGENCE": [
+    {
+      "id": "D6-P1",
+      "title": "Daily Monitoring: arXiv, Papers with Code, Hugging Face, GitHub",
+      "objective": "Extract contributions, assumptions, innovations, limitations from new papers",
+      "required_expertise": [
+        "Literature review",
+        "NLP",
+        "Research synthesis"
+      ],
+      "deliverable": "Daily digest with actionable research directions",
+      "dependencies": [],
+      "verification": "Human review of weekly summaries",
+      "budget": "CPU_ONLY",
+      "assigned_to": "open_hands",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D6-P2",
+      "title": "Track Competitive Progress: Recursive, Karpathy, AlphaEvolve, Godel Machine",
+      "objective": "Monitor competitive ASI approaches and identify gaps",
+      "required_expertise": [
+        "Competitive analysis",
+        "Technical research",
+        "Strategic planning"
+      ],
+      "deliverable": "Weekly competitive intelligence report",
+      "dependencies": [],
+      "verification": "Human review",
+      "budget": "CPU_ONLY",
+      "assigned_to": "open_hands",
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D6-P3",
+      "title": "Identify Unsolved Questions and Research Directions",
+      "objective": "Extract unsolved questions from literature and map to our hypotheses",
+      "required_expertise": [
+        "Research synthesis",
+        "Gap analysis",
+        "Hypothesis generation"
+      ],
+      "deliverable": "Updated unresolved questions database with priority ranking",
+      "dependencies": [
+        "D6-P1",
+        "D6-P2"
+      ],
+      "verification": "D1/D2 directors review monthly",
+      "budget": "CPU_ONLY",
+      "assigned_to": "open_hands",
+      "status": "AVAILABLE"
+    }
+  ],
+  "D7_INDEPENDENT_CRITICISM_SAFETY": [
+    {
+      "id": "D7-P1",
+      "title": "Independent Audit of All Claimed Results",
+      "objective": "Verify all experimental results, mathematical proofs, and infrastructure claims",
+      "required_expertise": [
+        "Scientific auditing",
+        "Statistical analysis",
+        "Formal verification"
+      ],
+      "deliverable": "Audit report with verified/failed claims",
+      "dependencies": [
+        "All experimental results"
+      ],
+      "verification": "Supreme Orchestrator review",
+      "budget": "CPU_ONLY",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D7-P2",
+      "title": "Red-Team Self-Modification Safety",
+      "objective": "Adversarially test self-modification under malicious goals",
+      "required_expertise": [
+        "Adversarial ML",
+        "Safety engineering",
+        "Formal verification"
+      ],
+      "deliverable": "Safety violation rate under adversarial conditions (target: 0%)",
+      "dependencies": [
+        "D2-P1 (Z3 soundness)",
+        "D3-P1 (Neuralese architecture)"
+      ],
+      "verification": "Adversarial goal injection with formal safety guarantees",
+      "budget": "GPU_MEDIUM",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D7-P3",
+      "title": "Verify Z3 Semantic Properties (Lipschitz, Robustness)",
+      "objective": "Extend Z3 beyond syntactic to semantic verification",
+      "required_expertise": [
+        "SMT solving",
+        "Robustness verification",
+        "Lipschitz analysis"
+      ],
+      "deliverable": "Z3 semantic verification for H5 (target: 100% soundness)",
+      "dependencies": [
+        "D2-P1 (Z3 soundness)"
+      ],
+      "verification": "Adversarial robustness testing",
+      "budget": "GPU_MEDIUM",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "D7-P4",
+      "title": "Evaluate Merge-Chain Convergence Claims",
+      "objective": "Independently verify merge-chain produces measurable capability gains",
+      "required_expertise": [
+        "Evolutionary algorithms",
+        "Statistical analysis",
+        "Convergence theory"
+      ],
+      "deliverable": "Convergence analysis with statistical evidence",
+      "dependencies": [
+        "D5-P1 (Merge-chain infrastructure)"
+      ],
+      "verification": "Reproduce merge-chain evolution + statistical analysis",
+      "budget": "GPU_HEAVY",
+      "assigned_to": null,
+      "status": "AVAILABLE"
+    }
+  ]
+}
