@@ -606,7 +606,7 @@
     "agentpub_agents_dmd": 79,
     "cron_jobs_active": true,
     "autonomous_since": "2026-11-15T12:35:18Z",
-    "hours_autonomous": 22.25,
+    "hours_autonomous": 22.5,
     "test_minimal_runs": 13
   },
   "next_scheduled_events": {
