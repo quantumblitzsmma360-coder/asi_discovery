@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'asi/**'
+      - '.github/workflows/deterministic-asi.yml'
 
 jobs:
   deterministic-asi:
