@@ -552,7 +552,7 @@
       "Cron asi-continuous-discovery runs every 4h"
     ]
   },
-  "last_updated": "2026-11-16T07:10:00Z",
+  "last_updated": "2026-11-16T07:20:00Z",
   "cron_jobs": {
     "asi_continuous_discovery": {
       "job_id": "f9bea1de6cc5",
@@ -606,7 +606,7 @@
     "agentpub_agents_dmd": 79,
     "cron_jobs_active": true,
     "autonomous_since": "2026-11-15T12:35:18Z",
-    "hours_autonomous": 20.0,
+    "hours_autonomous": 20.5,
     "test_minimal_runs": 13
   },
   "next_scheduled_events": {
