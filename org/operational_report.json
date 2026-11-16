@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-16T23:50:00Z",
-  "autonomous_hours": 43.83,
+  "last_updated": "2026-11-17T00:00:00Z",
+  "autonomous_hours": 44.0,
   "phase": "ORGANISATION_ESTABLISHMENT",
   "github_actions_run": 14,
-  "status": "PARALLEL_RESEARCH_INITIATED",
+  "status": "PARALLEL_RESEARCH_ACTIVE",
   "workers_active": 100,
   "hypotheses_active": 10,
   "experiments_per_run": 1000,
@@ -107,5 +107,5 @@
     "D7_INDEPENDENT_CRITICISM_SAFETY"
   ],
   "total_projects": 26,
-  "projects_status": "EXECUTION_STARTED"
+  "projects_status": "EXECUTION_ACTIVE"
 }
