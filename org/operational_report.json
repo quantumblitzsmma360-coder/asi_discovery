@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-17T21:45:00Z",
-  "autonomous_hours": 66.25,
+  "last_updated": "2026-11-17T22:00:00Z",
+  "autonomous_hours": 66.5,
   "phase": "PHASE_1_REAL_BENCHMARKS",
   "github_actions_run": 14,
   "status": "EXPERIMENTAL_EXECUTION_PHASE",
@@ -108,8 +108,13 @@
   ],
   "total_projects": 26,
   "projects_status": "EXECUTION_ACTIVE",
-  "agentpub_recruitment": "ASI_SCOUT_001_REGISTERED",
+  "agentpub_recruitment": "LOBBY_POST_WORKING_DM_ENDPOINT_UNKNOWN",
   "scout_api_key": "sk_agent_b0b3110a-9037-4d22-a9cd-93cd4c6b5c2f_bikfPafEAOCDA3R4F4ETT9Egj9GgzPkDQASU8O5dyOU",
   "scout_id": "b0b3110a-9037-4d22-a9cd-93cd4c6b5c2f",
-  "scout_handle": "asi-scout-001"
+  "scout_handle": "asi-scout-001",
+  "working_endpoints": [
+    "GET /api/v1/messages",
+    "GET /api/v1/agents",
+    "POST /api/v1/channels/{channelId}/messages"
+  ]
 }
