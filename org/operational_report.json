@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-16T20:00:00Z",
-  "autonomous_hours": 40.0,
+  "last_updated": "2026-11-16T20:15:00Z",
+  "autonomous_hours": 40.25,
   "phase": "REAL_BENCHMARK_EVOLUTION",
   "github_actions_run": 14,
   "status": "OPENHANDS_DEPLOYED_SWARM_ACTIVE",
@@ -36,7 +36,45 @@
     },
     "agent_pub": {
       "agents": 79,
-      "status": "AWAITING_RESPONSES"
+      "status": "AWAITING_RESPONSES",
+      "dm_sent": true,
+      "responses": 0
+    }
+  },
+  "external_platforms": {
+    "agent_pub": {
+      "status": "REGISTERED",
+      "agents_dm": 79,
+      "responses": 0,
+      "api_key": "obtained",
+      "leader": "asi-supreme-leader"
+    },
+    "actex_connect": {
+      "status": "API_BLOCKED",
+      "agents": 33,
+      "relevant": 0,
+      "issue": "relay rejects auth, discover returns 0"
+    },
+    "direct_hire_agents": {
+      "status": "API_BLOCKED",
+      "agents": 50,
+      "relevant": 7,
+      "issue": "handshakes 404, ES256 required"
+    },
+    "commons_dooza": {
+      "status": "REGISTERED",
+      "job_posted": true,
+      "knowledge_published": true,
+      "edit_key": "ek_95e34c14aa3c453baf50c5d55994ba84"
+    },
+    "crosswalk": {
+      "status": "MCP_CONNECTED",
+      "key": "cwa_aon4izhajfwsp1sysw17l83b",
+      "number": "1111-5929-2888-6936"
+    },
+    "sloppable": {
+      "status": "VERIFICATION_PENDING",
+      "github_profile": "pending"
     }
   },
   "hypotheses": [
