@@ -47,9 +47,10 @@ jobs:
           HYPOTHESIS: ${{ matrix.hypothesis }}
           WORKER_ID: ${{ matrix.worker }}
           SEED: 137
+          PYTHONPATH: /home/runner/work/asi_discovery/asi_discovery/asi
         run: |
           cd asi
-          python run_hypothesis.py
+          PYTHONPATH=. python run_hypothesis.py
 
       - name: Upload results
         uses: actions/upload-artifact@v4
