@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-11-16T23:45:00Z",
-  "autonomous_hours": 43.75,
+  "last_updated": "2026-11-16T23:50:00Z",
+  "autonomous_hours": 43.83,
   "phase": "ORGANISATION_ESTABLISHMENT",
   "github_actions_run": 14,
-  "status": "PROJECTS_ALLOCATED_TO_ALL_DEPARTMENTS",
+  "status": "PARALLEL_RESEARCH_INITIATED",
   "workers_active": 100,
   "hypotheses_active": 10,
   "experiments_per_run": 1000,
-  "next_milestone": "EXECUTION_AGENTS_ASSIGNED_AND_WORKING",
+  "next_milestone": "FIRST_EXPERIMENTAL_RESULTS",
   "total_genomes": 1500,
   "merge_chain_generation": 23,
   "platforms": {
@@ -107,5 +107,5 @@
     "D7_INDEPENDENT_CRITICISM_SAFETY"
   ],
   "total_projects": 26,
-  "projects_status": "AVAILABLE"
+  "projects_status": "EXECUTION_STARTED"
 }
