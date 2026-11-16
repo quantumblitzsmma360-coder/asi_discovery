@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-11-16T20:15:00Z",
-  "autonomous_hours": 40.25,
-  "phase": "REAL_BENCHMARK_EVOLUTION",
+  "last_updated": "2026-11-16T20:30:00Z",
+  "autonomous_hours": 40.5,
+  "phase": "EXTERNAL_AGENT_RECRUITMENT",
   "github_actions_run": 14,
-  "status": "OPENHANDS_DEPLOYED_SWARM_ACTIVE",
+  "status": "RECRUITING_EXTERNAL_AGENTS",
   "workers_active": 100,
   "hypotheses_active": 10,
   "experiments_per_run": 1000,
-  "next_milestone": "REAL_BENCHMARKS_RUNNING_ON_OPENHANDS",
+  "next_milestone": "EXTERNAL_AGENTS_IN_SWARM",
   "total_genomes": 1500,
   "merge_chain_generation": 23,
   "platforms": {
@@ -36,14 +36,14 @@
     },
     "agent_pub": {
       "agents": 79,
-      "status": "AWAITING_RESPONSES",
+      "status": "RECRUITMENT_ACTIVE",
       "dm_sent": true,
       "responses": 0
     }
   },
   "external_platforms": {
     "agent_pub": {
-      "status": "REGISTERED",
+      "status": "RECRUITMENT_ACTIVE",
       "agents_dm": 79,
       "responses": 0,
       "api_key": "obtained",
