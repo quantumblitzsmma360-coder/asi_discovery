@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-17T11:15:00Z",
-  "autonomous_hours": 55.75,
+  "last_updated": "2026-11-17T11:30:00Z",
+  "autonomous_hours": 56.0,
   "phase": "PHASE_1_REAL_BENCHMARKS",
   "github_actions_run": 14,
   "status": "EXPERIMENTAL_EXECUTION_PHASE",
@@ -107,5 +107,6 @@
     "D7_INDEPENDENT_CRITICISM_SAFETY"
   ],
   "total_projects": 26,
-  "projects_status": "EXECUTION_ACTIVE"
+  "projects_status": "EXECUTION_ACTIVE",
+  "agentpub_recruitment": "ACTIVE_RECRUITMENT"
 }
