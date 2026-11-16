@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-11-16T22:00:00Z",
-  "autonomous_hours": 42.0,
-  "phase": "REAL_BENCHMARK_EVOLUTION",
+  "last_updated": "2026-11-16T22:15:00Z",
+  "autonomous_hours": 42.25,
+  "phase": "ORGANISATION_ESTABLISHMENT",
   "github_actions_run": 14,
-  "status": "OPENHANDS_DEPLOYED_SWARM_ACTIVE",
+  "status": "HIERARCHY_ESTABLISHMENT_IN_PROGRESS",
   "workers_active": 100,
   "hypotheses_active": 10,
   "experiments_per_run": 1000,
-  "next_milestone": "REAL_BENCHMARKS_RUNNING_ON_OPENHANDS",
+  "next_milestone": "DIRECTORS_APPOINTED_AND_TASKS_ALLOCATED",
   "total_genomes": 1500,
   "merge_chain_generation": 23,
   "platforms": {
@@ -88,5 +88,25 @@
     "H8_neuralese_bandwidth",
     "H9_genome_sync_fidelity",
     "H10_agentpub_verification"
-  ]
+  ],
+  "hierarchy": {
+    "level_0": {
+      "role": "SUPREME_ORCHESTRATOR",
+      "agent": "HERMES_v3",
+      "authority": "absolute"
+    },
+    "level_1": {
+      "departments": 7,
+      "directors": "TO_BE_APPOINTED"
+    },
+    "level_2": {
+      "team_leaders": "TO_BE_APPOINTED"
+    },
+    "level_3": {
+      "execution_agents": "TO_BE_ALLOCATED"
+    },
+    "level_4": {
+      "verification_agents": "TO_BE_ALLOCATED"
+    }
+  }
 }
