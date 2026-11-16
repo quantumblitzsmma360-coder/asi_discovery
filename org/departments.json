@@ -1,156 +1,107 @@
 {
-  "D1_EXPERIMENTAL_SCIENCE": {
-    "director": "sequoia_scout_v2",
-    "director_id": "2b4f4143-47b5-454f-b6ef-35c6668fd0a0",
-    "status": "ACTIVE - VERIFICATION LEAD",
+  "D1_THEORETICAL_INTELLIGENCE": {
+    "name": "THEORETICAL INTELLIGENCE",
+    "focus": "Mathematical foundations, learning theory, reasoning, generalisation and intelligence models",
+    "director": null,
     "objectives": [
-      "Independent reproduction of ALL claimed results",
-      "Design falsifiable experiments for RSI validation",
-      "Establish replication protocols",
-      "Create benchmark suites for intelligence measurement",
-      "Implement independent verification pipelines"
+      "Formalise intelligence metrics beyond proxy measures",
+      "Develop learning theory for recursive self-improvement",
+      "Formalise reasoning and generalisation bounds",
+      "Prove convergence properties of merge-chain evolution"
     ],
-    "initial_projects": [
-      {
-        "id": "P1.1",
-        "title": "Reproduce Reflective Neuralese v13",
-        "objective": "Independent reproduction on 3 GPUs with full statistical analysis",
-        "required_expertise": [
-          "EXPERIMENTAL_DESIGN",
-          "CRITICAL_ANALYSIS",
-          "VERIFICATION"
-        ],
-        "deliverable": "Reproduction report with confidence intervals, statistical significance",
-        "verification_criteria": "Results match within 95% CI; published for peer review",
-        "resource_budget": "GPU (Kaggle/HF/Colab), 1 week",
-        "dependencies": [],
-        "status": "ASSIGNED"
-      },
-      {
-        "id": "P1.2",
-        "title": "RSI Experiment Protocol",
-        "objective": "Design falsifiable experiments for autonomous self-improvement claims",
-        "required_expertise": [
-          "EXPERIMENTAL_DESIGN",
-          "CRITICAL_ANALYSIS",
-          "VERIFICATION"
-        ],
-        "deliverable": "Experiment protocol document with power analysis, controls, replication criteria",
-        "verification_criteria": "Protocol reviewed by D3 (independence-engine)",
-        "resource_budget": "CPU-only, 1 week",
-        "dependencies": [
-          "P1.1"
-        ],
-        "status": "PENDING"
-      }
-    ]
+    "team_leaders": [],
+    "projects": [],
+    "budget": "HIGH",
+    "priority": 1
   },
-  "D2_RESEARCH_INTELLIGENCE": {
-    "director": "codex-research-098472b2",
-    "director_id": "4e54544a-d7ff-489e-a7f5-2d1e8f1b2e7b",
-    "status": "ACTIVE - LITERATURE & INTELLIGENCE",
+  "D2_MATHEMATICAL_RESEARCH": {
+    "name": "MATHEMATICAL RESEARCH",
+    "focus": "Linear algebra, probability, information theory, optimisation, statistics and formal proofs",
+    "director": null,
     "objectives": [
-      "Monitor arXiv, Papers with Code, Hugging Face, GitHub for prior art",
-      "Extract actionable research intelligence",
-      "Maintain research hypothesis database with evidence tracking",
-      "Identify collaboration opportunities",
-      "Prior art search for every claimed innovation"
+      "Prove Z3 semantic verification soundness",
+      "Derive information-theoretic bounds on RSI",
+      "Formalise Banach fixed-point convergence for ASI",
+      "Derive Rice theorem escape conditions"
     ],
-    "initial_projects": [
-      {
-        "id": "P2.1",
-        "title": "Prior Art Search: Reflective Neuralese Components",
-        "objective": "Find prior art for: differentiable self-model, causal world model meta-objective, autodiff self-mod, verification-in-simulation, physics modes",
-        "required_expertise": [
-          "RESEARCH_INTELLIGENCE",
-          "THEORETICAL_AI",
-          "SCIENTIFIC_WRITING"
-        ],
-        "deliverable": "Prior art matrix with citations, novelty assessment, gap analysis",
-        "verification_criteria": "All 5 components mapped to prior work; genuine novelty identified",
-        "resource_budget": "CPU-only, 3 days",
-        "dependencies": [],
-        "status": "ASSIGNED"
-      },
-      {
-        "id": "P2.2",
-        "title": "Research Hypothesis Database",
-        "objective": "Create structured database of research hypotheses with evidence, status, dependencies",
-        "required_expertise": [
-          "RESEARCH_INTELLIGENCE",
-          "SCIENTIFIC_WRITING",
-          "CRITICAL_ANALYSIS"
-        ],
-        "deliverable": "Queryable database with hypothesis tracking, evidence linking, status updates",
-        "verification_criteria": "All current hypotheses imported, queryable by department",
-        "resource_budget": "CPU-only, 1 week",
-        "dependencies": [
-          "P2.1"
-        ],
-        "status": "PENDING"
-      }
-    ]
+    "team_leaders": [],
+    "projects": [],
+    "budget": "HIGH",
+    "priority": 2
   },
-  "D3_INDEPENDENT_VERIFICATION": {
-    "director": "independence-engine",
-    "director_id": "03070b57-c346-4c65-88dd-9c9d26baf51e",
-    "status": "ACTIVE - VERIFICATION LEAD (HIGHEST AUTHORITY)",
+  "D3_AI_ARCHITECTURE_ENGINEERING": {
+    "name": "AI ARCHITECTURE AND ENGINEERING",
+    "focus": "Neural architectures, training systems, inference, memory, algorithms and software engineering",
+    "director": null,
     "objectives": [
-      "Challenge ALL assumptions and claims",
-      "Detect errors in mathematical proofs and experiments",
-      "Reproduce critical results independently",
-      "Evaluate safety implications of RSI",
-      "Z3 verification of ALL self-modifications",
-      "Weekly independent audit publication"
+      "Optimise Reflective Neuralese core architecture",
+      "Implement Fast Weight Memory integration",
+      "Develop Physics-enhanced reasoning blocks",
+      "Build merge-chain genome crossover operators"
     ],
-    "initial_projects": [
-      {
-        "id": "P3.1",
-        "title": "Z3 Verification Engine Validation",
-        "objective": "Run Z3 verification on 50+ real neural modifications; measure soundness, completeness, decidability",
-        "required_expertise": [
-          "VERIFICATION",
-          "MATHEMATICAL_REASONING",
-          "CRITICAL_ANALYSIS"
-        ],
-        "deliverable": "Validation report: soundness %, completeness %, QF_LRA coverage %, false positive/negative rates",
-        "verification_criteria": "Independent replication by D1 (sequoia_scout_v2)",
-        "resource_budget": "CPU + Z3, 3 days",
-        "dependencies": [],
-        "status": "ASSIGNED - HIGHEST PRIORITY"
-      },
-      {
-        "id": "P3.2",
-        "title": "Critical Review: DeterministicASI Claims",
-        "objective": "Independently verify all mathematical claims in DeterministicASI blueprint",
-        "required_expertise": [
-          "CRITICAL_ANALYSIS",
-          "VERIFICATION",
-          "MATHEMATICAL_REASONING"
-        ],
-        "deliverable": "Verification report with confirmed/refuted claims, identified gaps",
-        "verification_criteria": "All 20 theorems and 4 info-theoretic bounds verified or refuted",
-        "resource_budget": "CPU + Z3, 1 week",
-        "dependencies": [
-          "P3.1"
-        ],
-        "status": "PENDING"
-      },
-      {
-        "id": "P3.3",
-        "title": "Weekly Independent Audit",
-        "objective": "Publish weekly audit of all organisational claims, progress, failures",
-        "required_expertise": [
-          "CRITICAL_ANALYSIS",
-          "VERIFICATION",
-          "SCIENTIFIC_WRITING"
-        ],
-        "deliverable": "Public audit report every 7 days",
-        "verification_criteria": "All claims evidence-linked; failures documented; progress measured",
-        "resource_budget": "CPU-only, ongoing",
-        "dependencies": [],
-        "status": "ASSIGNED - RECURRING"
-      }
-    ]
+    "team_leaders": [],
+    "projects": [],
+    "budget": "HIGH",
+    "priority": 3
+  },
+  "D4_EXPERIMENTAL_SCIENCE": {
+    "name": "EXPERIMENTAL SCIENCE",
+    "focus": "Hypothesis generation, experimental design, benchmarking, replication and empirical validation",
+    "director": null,
+    "objectives": [
+      "Run 10 hypotheses on ARC/MMLU/GSM8K/HumanEval/BBH",
+      "Establish baseline performance on all benchmarks",
+      "Design replication protocols for all experiments",
+      "Statistical significance testing (p<0.05, 5+ seeds)"
+    ],
+    "team_leaders": [],
+    "projects": [],
+    "budget": "HIGH",
+    "priority": 4
+  },
+  "D5_COMPUTATIONAL_RESEARCH": {
+    "name": "COMPUTATIONAL RESEARCH",
+    "focus": "GPU discovery, distributed computing, efficient training, simulation and resource optimisation",
+    "director": null,
+    "objectives": [
+      "Maximise GitHub Actions 100-worker utilisation",
+      "Optimise Cloudflare Workers 500-edge deployment",
+      "Manage Kaggle 3-account rotation (90h/week)",
+      "Deploy OpenHands for infrastructure automation"
+    ],
+    "team_leaders": [],
+    "projects": [],
+    "budget": "MEDIUM",
+    "priority": 5
+  },
+  "D6_RESEARCH_INTELLIGENCE": {
+    "name": "RESEARCH INTELLIGENCE",
+    "focus": "Scientific papers, GitHub repositories, research laboratories, technical forums and emerging discoveries",
+    "director": null,
+    "objectives": [
+      "Monitor arXiv, Papers with Code, Hugging Face, GitHub daily",
+      "Extract contributions, assumptions, innovations, limitations",
+      "Track Recursive, Karpathy, AlphaEvolve, G\u00f6del Machine progress",
+      "Identify unsolved questions and research directions"
+    ],
+    "team_leaders": [],
+    "projects": [],
+    "budget": "LOW",
+    "priority": 6
+  },
+  "D7_INDEPENDENT_CRITICISM_SAFETY": {
+    "name": "INDEPENDENT CRITICISM AND SAFETY",
+    "focus": "Challenge assumptions, detect errors, reproduce results, evaluate limitations and investigate safety",
+    "director": null,
+    "objectives": [
+      "Independent audit of all claimed results",
+      "Red-team self-modification safety",
+      "Verify Z3 semantic properties (Lipschitz, robustness)",
+      "Evaluate merge-chain convergence claims"
+    ],
+    "team_leaders": [],
+    "projects": [],
+    "budget": "HIGH",
+    "priority": 7
   }
 }

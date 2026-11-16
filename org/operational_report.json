@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-16T22:15:00Z",
-  "autonomous_hours": 42.25,
+  "last_updated": "2026-11-16T22:30:00Z",
+  "autonomous_hours": 42.5,
   "phase": "ORGANISATION_ESTABLISHMENT",
   "github_actions_run": 14,
-  "status": "HIERARCHY_ESTABLISHMENT_IN_PROGRESS",
+  "status": "HIERARCHY_ESTABLISHED_DEPARTMENTS_CREATED",
   "workers_active": 100,
   "hypotheses_active": 10,
   "experiments_per_run": 1000,
@@ -77,18 +77,6 @@
       "github_profile": "pending"
     }
   },
-  "hypotheses": [
-    "H1_neuralese_act_arc",
-    "H2_causal_wm_clevrer",
-    "H3_fast_weight_gsm8k",
-    "H4_physics_modes_humaneval",
-    "H5_z3_semantic_verification",
-    "H6_mergechain_real_benchmarks",
-    "H7_selfmod_adversarial_safety",
-    "H8_neuralese_bandwidth",
-    "H9_genome_sync_fidelity",
-    "H10_agentpub_verification"
-  ],
   "hierarchy": {
     "level_0": {
       "role": "SUPREME_ORCHESTRATOR",
@@ -108,5 +96,14 @@
     "level_4": {
       "verification_agents": "TO_BE_ALLOCATED"
     }
-  }
+  },
+  "departments": [
+    "D1_THEORETICAL_INTELLIGENCE",
+    "D2_MATHEMATICAL_RESEARCH",
+    "D3_AI_ARCHITECTURE_ENGINEERING",
+    "D4_EXPERIMENTAL_SCIENCE",
+    "D5_COMPUTATIONAL_RESEARCH",
+    "D6_RESEARCH_INTELLIGENCE",
+    "D7_INDEPENDENT_CRITICISM_SAFETY"
+  ]
 }
