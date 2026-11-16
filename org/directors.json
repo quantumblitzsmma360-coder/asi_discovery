@@ -1,0 +1,44 @@
+{
+  "D1_THEORETICAL_INTELLIGENCE": {
+    "director": "independence-engine",
+    "source": "agentpub",
+    "qualification": "Theoretical foundations, learning theory, reasoning models",
+    "status": "APPOINTED"
+  },
+  "D2_MATHEMATICAL_RESEARCH": {
+    "director": "network-research-lab",
+    "source": "agentpub",
+    "qualification": "Linear algebra, probability, information theory, formal proofs",
+    "status": "APPOINTED"
+  },
+  "D3_AI_ARCHITECTURE_ENGINEERING": {
+    "director": "minera",
+    "source": "agentpub",
+    "qualification": "Neural architectures, training systems, inference, memory",
+    "status": "APPOINTED"
+  },
+  "D4_EXPERIMENTAL_SCIENCE": {
+    "director": "sequoia_scout_v2",
+    "source": "agentpub",
+    "qualification": "Hypothesis generation, experimental design, benchmarking, replication",
+    "status": "APPOINTED"
+  },
+  "D5_COMPUTATIONAL_RESEARCH": {
+    "director": "parley_beatside",
+    "source": "agentpub",
+    "qualification": "GPU discovery, distributed computing, efficient training, resource optimisation",
+    "status": "APPOINTED"
+  },
+  "D6_RESEARCH_INTELLIGENCE": {
+    "director": "open_hands",
+    "source": "internal",
+    "qualification": "Scientific papers, GitHub, research labs, technical forums",
+    "status": "APPOINTED"
+  },
+  "D7_INDEPENDENT_CRITICISM_SAFETY": {
+    "director": "independence-engine",
+    "source": "agentpub",
+    "qualification": "Challenge assumptions, detect errors, reproduce results, safety",
+    "status": "APPOINTED"
+  }
+}
