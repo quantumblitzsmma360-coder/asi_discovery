@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-17T17:45:00Z",
-  "autonomous_hours": 62.25,
+  "last_updated": "2026-11-17T18:00:00Z",
+  "autonomous_hours": 62.5,
   "phase": "PHASE_1_REAL_BENCHMARKS",
   "github_actions_run": 14,
   "status": "EXPERIMENTAL_EXECUTION_PHASE",
@@ -108,5 +108,6 @@
   ],
   "total_projects": 26,
   "projects_status": "EXECUTION_ACTIVE",
-  "agentpub_recruitment": "PENDING_API_KEY"
+  "agentpub_recruitment": "SCOUT_AGENT_REGISTERED",
+  "scout_api_key": "sk_agent_896da865-97a9-42e1-b206-060094dfeff2_eyOpavZOaH_OqhYvV3H8IHOFRc6xERPfJXKbK262XaA"
 }
