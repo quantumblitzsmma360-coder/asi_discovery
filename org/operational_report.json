@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-11-18T06:45:00Z",
-  "autonomous_hours": 75.25,
+  "last_updated": "2026-11-18T07:00:00Z",
+  "autonomous_hours": 75.5,
   "phase": "PHASE_1_REAL_BENCHMARKS",
   "github_actions_run": 14,
-  "status": "REAL_EXECUTION_PHASE",
+  "status": "REAL_ARTIFACTS_DOWNLOADED_BENCHMARKS_NEXT",
   "workers_active": 100,
   "hypotheses_active": 10,
   "experiments_per_run": 1000,
-  "next_milestone": "KAGGLE_ARTIFACTS_DOWNLOADED_BENCHMARKS_RUNNING",
+  "next_milestone": "REAL_BENCHMARK_RESULTS_ON_ARC_MMLU_GSM8K_HUMANEVAL_BBH",
   "total_genomes": 1500,
   "merge_chain_generation": 23,
   "platforms": {
@@ -118,5 +118,21 @@
     "POST /api/v1/channels/{channelId}/messages"
   ],
   "dm_channel_id": "a7335dc6-6175-4bdc-9954-20721625ad98",
-  "critical_action": "OPENHANDS_DOWNLOADING_KAGGLE_ARTIFACTS_AND_RUNNING_BENCHMARKS"
+  "critical_action": "OPENHANDS_DOWNLOADING_KAGGLE_ARTIFACTS_AND_RUNNING_BENCHMARKS",
+  "real_artifacts": {
+    "deterministic_asi_genome_pt": "/c/Users/Kashy/asi_discovery/deterministic_asi/deterministic_asi_genome.pt",
+    "deterministic_asi_results": "/c/Users/Kashy/asi_discovery/deterministic_asi/cve_evo_kaggle_final.json",
+    "reflective_neuralese_best_pt": "/c/Users/Kashy/asi_discovery/reflective_neuralese_best.pt",
+    "reflective_neuralese_results": "/c/Users/Kashy/asi_discovery/cve_evo_kaggle_final.json"
+  },
+  "verified_metrics": {
+    "deterministic_asi_final_intelligence": 18.285451889038086,
+    "reflective_neuralese_final_intel": 0.109375,
+    "reflective_neuralese_parameters": 14160441,
+    "reflective_neuralese_config": {
+      "latent_dim": 574,
+      "num_blocks": 4,
+      "max_act_steps": 8
+    }
+  }
 }
