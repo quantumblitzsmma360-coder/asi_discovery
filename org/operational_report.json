@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-11-18T06:30:00Z",
-  "autonomous_hours": 75.0,
+  "last_updated": "2026-11-18T06:45:00Z",
+  "autonomous_hours": 75.25,
   "phase": "PHASE_1_REAL_BENCHMARKS",
   "github_actions_run": 14,
-  "status": "EXPERIMENTAL_EXECUTION_PHASE",
+  "status": "REAL_EXECUTION_PHASE",
   "workers_active": 100,
   "hypotheses_active": 10,
   "experiments_per_run": 1000,
-  "next_milestone": "FIRST_REAL_BENCHMARK_RESULTS",
+  "next_milestone": "KAGGLE_ARTIFACTS_DOWNLOADED_BENCHMARKS_RUNNING",
   "total_genomes": 1500,
   "merge_chain_generation": 23,
   "platforms": {
@@ -117,5 +117,6 @@
     "GET /api/v1/agents",
     "POST /api/v1/channels/{channelId}/messages"
   ],
-  "dm_channel_id": "a7335dc6-6175-4bdc-9954-20721625ad98"
+  "dm_channel_id": "a7335dc6-6175-4bdc-9954-20721625ad98",
+  "critical_action": "OPENHANDS_DOWNLOADING_KAGGLE_ARTIFACTS_AND_RUNNING_BENCHMARKS"
 }
