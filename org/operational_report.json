@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-18T07:00:00Z",
-  "autonomous_hours": 75.5,
+  "last_updated": "2026-11-18T07:15:00Z",
+  "autonomous_hours": 75.75,
   "phase": "PHASE_1_REAL_BENCHMARKS",
   "github_actions_run": 14,
-  "status": "REAL_ARTIFACTS_DOWNLOADED_BENCHMARKS_NEXT",
+  "status": "MODELS_LOADED_BENCHMARKS_STARTING",
   "workers_active": 100,
   "hypotheses_active": 10,
   "experiments_per_run": 1000,
@@ -133,6 +133,33 @@
       "latent_dim": 574,
       "num_blocks": 4,
       "max_act_steps": 8
+    }
+  },
+  "verified_models": {
+    "reflective_neuralese": {
+      "parameters": 14160441,
+      "latent_dim": 574,
+      "num_blocks": 5,
+      "max_act_steps": 8,
+      "val_acc": 0.109375,
+      "val_loss": 3.6798543632030487,
+      "architecture": "reflective_neuralese",
+      "checkpoint": "reflective_neuralese_best.pt"
+    },
+    "deterministic_asi": {
+      "final_intelligence": 18.285451889038086,
+      "generation": 0,
+      "latent_dim": 512,
+      "num_blocks": 4,
+      "config": {
+        "latent_dim": 512,
+        "num_blocks": 4,
+        "max_ast_depth": 10,
+        "verification_timeout": 30,
+        "modification_budget": 1000,
+        "seed": 137
+      },
+      "checkpoint": "deterministic_asi_genome.pt"
     }
   }
 }
